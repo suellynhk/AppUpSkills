@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, TextInput, Image } from 'react-native';
 
 import { RectButton } from 'react-native-gesture-handler';
@@ -9,9 +9,50 @@ import styles from './styles';
 import loginIcon from '../../assets/images/icons/login.png';
 import { useNavigation } from '@react-navigation/native';
 
+interface Usuario {
+    cpf: string,
+    senha: string,
+    gestor: boolean
+}
+
 function Login() {
+
+    const usuarios : Usuario[] = [
+        {
+            cpf: '111.111.111-11',
+            senha: '123mudar',
+            gestor: true
+        },
+        {
+            cpf: '222.222.222-22',
+            senha: '123mudar',
+            gestor: false
+        }
+    ]
+
+    const [cpf, setCpf] = useState('');
+    const [senha, setSenha] = useState('');
+
     const {navigate} = useNavigation();
     function handleFiltersSubmit(){
+        const usuariosFiltrados : Usuario[] = usuarios.filter(function(item : Usuario){
+            return item.cpf === cpf && item.senha === senha;
+        });
+
+        if (!usuariosFiltrados || usuariosFiltrados.length === 0 ) {
+            // mensagem de erro de usuario não encontrado
+            return;
+        }
+
+        const usuario = usuariosFiltrados[0];
+
+        if (usuario.gestor === true) {
+            // navegar para tela do gestor
+        }
+        else{
+            // navegar para tela do colaborador
+        }
+
         navigate('MainScreen');
     }
     return(
@@ -27,12 +68,12 @@ function Login() {
                     <Text style={styles.textLabel}>
                     Digite seu CPF:
                     </Text>
-                    <TextInput style={styles.input} placeholder="000.000.000-00"/>       
+                    <TextInput value={cpf} style={styles.input} placeholder="000.000.000-00"/>       
 
                     <Text style={styles.textLabel}>
                     Senha:
                     </Text>
-                    <TextInput style={styles.input} placeholder="Deve conter 6 dígitos"/> 
+                    <TextInput value={senha} style={styles.input} placeholder="Deve conter 6 dígitos"/> 
 
                     <View style={styles.button}>
                         <RectButton onPress={handleFiltersSubmit} style={styles.submitButton}>
