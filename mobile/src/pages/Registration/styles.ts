@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
 
     formCreateAccount:{
         marginTop: -40,
+        padding: 30,
         borderRadius: 20,
         backgroundColor: '#FFF',
     },
@@ -26,35 +27,31 @@ const styles = StyleSheet.create({
     
     textHeader: {
         fontSize: 20,
-        marginLeft: 20,
         marginTop: 15,
         fontFamily: 'Rubik_700Bold',
     },
 
     textLabel: {
         fontSize: 16,
-        marginTop: 15,
-        marginLeft: 35,
+        marginTop: 20,
         marginBottom: 5,
         fontFamily: 'Rubik_400Regular'
     },
 
     input: {
-        marginLeft: 35,
-        paddingLeft: 10,
-        width: 340,
+        width: '100%',
         height: 40,
+        paddingLeft: 10,
+        paddingTop: 12,
         borderRadius: 8,
         borderWidth: 1,
         borderColor: '#4949E7',
-        fontFamily: 'Rubik_400Regular'
+        fontSize: 16,
     },
     
     pickerBox:{
-        marginLeft: 35,
-        paddingLeft: 3,
         height: 40, 
-        width: 340,
+        width: '100%',
         borderRadius: 8,
         borderWidth: 1,
         borderColor: '#4949E7',
@@ -62,18 +59,17 @@ const styles = StyleSheet.create({
 
     picker: {
         height: 45, 
-        width: 340,
+        width: "100%",
     },
 
     button:{
-        margin: 20,
-        marginRight: 40,
+        marginTop: 40,
+        marginBottom: 40,
         alignItems: 'flex-end'
     },
 
     submitButton: {
-        marginTop: 20,
-        width: 200,
+        width: 155,
         height: 45,
         backgroundColor:'#4949E7',
         alignItems: 'center',

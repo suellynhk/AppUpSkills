@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Image } from 'react-native';
+import { View, Text, TextInput, Image, Alert } from 'react-native';
 
-import { RectButton } from 'react-native-gesture-handler';
+import { RectButton, BorderlessButton } from 'react-native-gesture-handler';
 import PageHeaderBack from '../../components/PageHeaderBack';
 
 import styles from './styles';
 
 import loginIcon from '../../assets/images/icons/login.png';
 import { useNavigation } from '@react-navigation/native';
+import { registerRootComponent } from 'expo';
 
 interface Usuario {
     cpf: string,
@@ -34,27 +35,43 @@ function Login() {
     const [senha, setSenha] = useState('');
 
     const {navigate} = useNavigation();
+
+    function handleNavigateToRegistration() {
+        navigate('Registration');
+    };
+
     function handleFiltersSubmit(){
         const usuariosFiltrados : Usuario[] = usuarios.filter(function(item : Usuario){
             return item.cpf === cpf && item.senha === senha;
         });
 
-        if (!usuariosFiltrados || usuariosFiltrados.length === 0 ) {
-            // mensagem de erro de usuario não encontrado
+        if (!usuariosFiltrados) {
+            Alert.alert(
+                "Iihh...",
+                "Esse usuário não foi encontrado!",
+            )
             return;
-        }
+        };
+
+        if (usuariosFiltrados.length === 0 ) {
+            Alert.alert(
+                "Ops...",
+                "Você precisa preencher todos os campos!",
+            )
+            return;
+        };
 
         const usuario = usuariosFiltrados[0];
+       console.log(usuario)
 
         if (usuario.gestor === true) {
-            // navegar para tela do gestor
-        }
-        else{
-            // navegar para tela do colaborador
-        }
+           navigate('MainScreenManager');
+        }else{
+           navigate('MainScreenCollaborator');
+        };
 
-        navigate('MainScreen');
-    }
+    };
+
     return(
         <View style={styles.container}> 
             <PageHeaderBack />
@@ -68,17 +85,20 @@ function Login() {
                     <Text style={styles.textLabel}>
                     Digite seu CPF:
                     </Text>
-                    <TextInput value={cpf} style={styles.input} placeholder="000.000.000-00"/>       
+                    <TextInput onChangeText={ text => setCpf(text)} value={cpf} style={styles.input} placeholder="000.000.000-00"/>       
 
                     <Text style={styles.textLabel}>
                     Senha:
                     </Text>
-                    <TextInput value={senha} style={styles.input} placeholder="Deve conter 6 dígitos"/> 
+                    <TextInput  onChangeText={ text => setSenha(text)} value={senha} style={styles.input} secureTextEntry placeholder="Deve conter 6 dígitos"/> 
 
                     <View style={styles.button}>
-                        <RectButton onPress={handleFiltersSubmit} style={styles.submitButton}>
+                        <RectButton onPress={handleFiltersSubmit} style={styles.submitButton} >
                             <Text style={styles.submitButtonText}> Enviar </Text>
                         </RectButton>
+                        <BorderlessButton onPress={handleNavigateToRegistration}>
+                            <Text style={styles.textToRegistration}>Ainda não possuo cadastro</Text>
+                        </BorderlessButton>
                     </View>
                 </View>
         </View>

@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
 
     loginForm:{
         marginTop: -40,
+        padding: 30,
         borderRadius: 20,
         backgroundColor: '#FFF',
     },
@@ -34,14 +35,12 @@ const styles = StyleSheet.create({
         fontSize: 16,
         marginBottom: 5,
         marginTop: 20,
-        marginLeft: 30,
         fontFamily: 'Rubik_400Regular'
     },
 
     input: {
-        marginLeft: 30,
         paddingLeft: 10,
-        width: 340,
+        width: '100%',
         height: 45,
         borderRadius: 8,
         borderWidth: 1,
@@ -50,14 +49,13 @@ const styles = StyleSheet.create({
     },
 
     button:{
-        margin: 20,
+        marginTop: 15,
         alignItems: 'flex-end'
     },
 
     submitButton: {
-        marginRight: 20,
         marginTop: 35,
-        width: 200,
+        width: 155,
         height: 45,
         backgroundColor:'#4949E7',
         alignItems: 'center',
@@ -69,7 +67,14 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontFamily: 'Rubik_700Bold',
         color: '#FFF'
-    }
+    },
+
+    textToRegistration: {
+        marginTop: 15,
+        fontSize: 11,
+        fontFamily: 'Rubik_400Regular',
+        textDecorationLine: 'underline'
+    },
 });
 
 export default styles;

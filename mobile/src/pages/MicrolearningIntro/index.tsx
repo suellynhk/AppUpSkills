@@ -13,8 +13,8 @@ import videoIcon from '../../assets/images/icons/video.png';
 function MicrolearningIntro() {
     const { navigate } = useNavigation();
     function handleNavigateToCreateAccountPage() {      
-       navigate('CreateAccount');
-    } 
+           navigate('Registration');
+    };
 
     return (
         <View style={styles.container}>
@@ -26,15 +26,15 @@ function MicrolearningIntro() {
                      {'  '}Preparamos uma breve explicação sobre as Soft Skills 
                      e sobre este aplicativo para você ficar por dentro do assunto!
                 </Text> 
-
+               
                 <Video
                 source={require('../../assets/microlearning-intro.mp4')}
                 rate={1.0}
                 volume={1.0}
                 isMuted={false} 
-                resizeMode="cover"
-                shouldPlay
-                isLooping
+                resizeMode={Video.RESIZE_MODE_CONTAIN}
+                shouldPlay={true}
+                isLooping={false}
                 useNativeControls={true}
                 style={{ width: 350, height:190 }}
                 />

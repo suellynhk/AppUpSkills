@@ -1,26 +1,30 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+
 import Landing from '../pages/Landing';
 import Login from '../pages/Login';
 import Registration from '../pages/Registration';
 import ConfirmedRegistration from '../pages/ConfirmedRegistration';
-import MainScreen from '../pages/MainScreen';
-import PendingEvaluations from '../pages/PendingEvaluations';
-import SelfEvaluation from '../pages/SelfEvaluation';
 import MicrolearningIntro from '../pages/MicrolearningIntro'
-import IndicateSomeone from '../pages/IndicateSomeone';
-import CompletedIndication from '../pages/CompletedIndication';
-import ValidateOrRefuse from '../pages/ValidateOrRefuse';
-import ValidatedIndication from '../pages/ValidateOrRefuse/ValidatedIndication';
-import RefusedIndication from '../pages/ValidateOrRefuse/RefusedIndication';
-import Dashboard from '../pages/Dashboard';
-import ComplexProblemsSolving from '../pages/Questionnaire/ComplexProblemsSolving';
-import EmotionalIntelligence from '../pages/Questionnaire/EmotionalIntelligence';
-import Flexibility from '../pages/Questionnaire/Flexibility';
-import JudgmentDecisionMaking from '../pages/Questionnaire/JudgmentDecisionMaking';
-import PeopleManagement from '../pages/Questionnaire/PeopleManagement';
-import CompletedQuestionnaire from '../pages/CompletedQuestionnaire';
+import MainScreenManager from '../manager/MainScreenManager';
+import PendingEvaluationsManager from '../manager/PendingEvaluationsManager';
+import IndicateSomeoneManager from '../manager/IndicateSomeoneManager';
+import CompletedIndicationManager from '../manager/CompletedIndicationManager';
+import SelfEvaluationManager from '../manager/SelfEvaluationManager';
+import ValidateOrRefuse from '../manager/ValidateOrRefuse';
+import ValidatedIndication from '../manager/ValidateOrRefuse/ValidatedIndication';
+import RefusedIndication from '../manager/ValidateOrRefuse/RefusedIndication';
+import DashboardManager from '../manager/DashboardManager';
+import FlexibilityManager from '../manager/QuestionnaireManager/FlexibilityManager';
+import ComplexProblemsSolvingManager from '../manager/QuestionnaireManager/ComplexProblemsSolvingManager';
+import EmotionalIntelligenceManager from '../manager/QuestionnaireManager/EmotionalIntelligenceManager';
+import JudgmentDecisionMakingManager from '../manager/QuestionnaireManager/JudgmentDecisionMakingManager';
+import PeopleManagement from '../manager/QuestionnaireManager/PeopleManagement';
+import CompletedQuestionnaireManager from '../manager/CompletedQuestionnaireManager';
+import MainScreenCollaborator from '../collaborator/MainScreenCollaborator';
+import FeedbackManager from '../manager/FeedbackManager';
+
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -31,26 +35,30 @@ function AppStack() {
                 <Screen name="Landing" component={Landing} />
                 <Screen name="Login" component={Login} />
                 <Screen name="MicrolearningIntro" component={MicrolearningIntro} />
-                <Screen name="CreateAccount" component={Registration} />
+                <Screen name="Registration" component={Registration} />
                 <Screen name="ConfirmedRegistration" component={ConfirmedRegistration} />
 
-                <Screen name="MainScreen" component={MainScreen} />
-                <Screen name="PendingEvaluations" component={PendingEvaluations} />
-                <Screen name="IndicateSomeone" component={IndicateSomeone} />
-                <Screen name="CompletedIndication" component={CompletedIndication} />
-                <Screen name="SelfEvaluation" component={SelfEvaluation} />
+                <Screen name="MainScreenManager" component={MainScreenManager} />
+                <Screen name="PendingEvaluationsManager" component={PendingEvaluationsManager} />
+                <Screen name="IndicateSomeoneManager" component={IndicateSomeoneManager} />
+                <Screen name="CompletedIndicationManager" component={CompletedIndicationManager} />
+                <Screen name="SelfEvaluationManager" component={SelfEvaluationManager} />
                 <Screen name="ValidateOrRefuse" component={ValidateOrRefuse} />
                 <Screen name="ValidatedIndication" component={ValidatedIndication} />
                 <Screen name="RefusedIndication" component={RefusedIndication} />
-                <Screen name="Dashboard" component={Dashboard} />
-
-                <Screen name="Flexibility" component={Flexibility} />
-                <Screen name="ComplexProblemsSolving" component={ComplexProblemsSolving} />
-                <Screen name="EmotionalIntelligence" component={EmotionalIntelligence} />
-                <Screen name="JudgmentDecisionMaking" component={JudgmentDecisionMaking} />
+                <Screen name="DashboardManager" component={DashboardManager} />
+                
+                <Screen name="FlexibilityManager" component={FlexibilityManager} />
+                <Screen name="ComplexProblemsSolvingManager" component={ComplexProblemsSolvingManager} />
+                <Screen name="EmotionalIntelligenceManager" component={EmotionalIntelligenceManager} />
+                <Screen name="JudgmentDecisionMakingManager" component={JudgmentDecisionMakingManager} />
                 <Screen name="PeopleManagement" component={PeopleManagement} />
-                <Screen name="CompletedQuestionnaire" component={CompletedQuestionnaire} />
-            </Navigator>
+                <Screen name="FeedbackManager" component={FeedbackManager} />
+                <Screen name="CompletedQuestionnaireManager" component={CompletedQuestionnaireManager} />
+
+                <Screen name="MainScreenCollaborator" component={MainScreenCollaborator} />
+      
+                </Navigator>
         </NavigationContainer>
     )
 }
