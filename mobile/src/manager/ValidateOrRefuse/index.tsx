@@ -17,6 +17,8 @@ interface PessoaIndicada{
 function ValidateOrRefuse() {
 
     const [isEnabled, setIsEnabled] = useState(false);
+
+
     const [pessoasSelecionadas, setPessoasSelecionadas] = useState(new Array<PessoaIndicada>());
 
     setPessoasSelecionadas([

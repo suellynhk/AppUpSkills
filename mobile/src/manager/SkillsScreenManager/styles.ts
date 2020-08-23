@@ -13,7 +13,8 @@ const styles = StyleSheet.create({
         padding: 35,
         backgroundColor: '#FFF',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginBottom: '40%',
     },
 
     chooseImg:{
@@ -24,31 +25,46 @@ const styles = StyleSheet.create({
 
     textMainScreen: {
         marginBottom: 20,
-        fontSize: 20,
+        fontSize: 18,
         fontFamily: 'Rubik_700Bold'
     },
 
-    buttonsContainer: {
-        marginTop: 30,
+    checkBoxContainer: {
         width: '100%',
-        alignItems:'center'
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginTop: 30,
     },
 
-    buttons: {
-        borderRadius: 8,
-        marginBottom: 30,
+    buttonContainer:{
         width: '100%',
+        alignItems: 'flex-end',
+        justifyContent: 'flex-end',
+    },
+
+    button: {
+        borderRadius: 8,
+        marginTop: 40,
+        marginBottom: 30,
+        width: 150,
         height: 45,
         backgroundColor: '#4949E7',
         alignItems: 'center',
         justifyContent: 'center',
+    },
 
+    textButton:{
+        fontSize: 18,
+        fontFamily: 'Rubik_500Medium',
+        alignItems: 'flex-end',
+        color:'#FFF'
     },
     
-    textButton: {
-        fontSize: 16,
-        color: '#FFF',
-        fontFamily: 'Rubik_500Medium'
+    skillsTitle: {
+        fontSize: 14,
+        fontFamily: 'Rubik_500Medium',
+        alignItems: 'flex-start',
     },
 });
 

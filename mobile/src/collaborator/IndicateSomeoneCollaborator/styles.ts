@@ -1,62 +1,65 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-
     container:{
-        flex: 1,
-        backgroundColor: '#FFF'
+        flex:1,
+        backgroundColor: '#FFF',
     },
 
-    loginForm:{
+    indication:{
+        padding: 25,
         marginTop: -40,
-        padding: 30,
         borderRadius: 20,
         backgroundColor: '#FFF',
     },
 
-    loginIconBox:{
-        marginTop: 50,
-        alignItems: 'center'
+    center: {
+        marginTop: 20,
+        justifyContent:'center',
+        alignItems:'center'
     },
 
-    loginIcon: {
+    colleaguesIcon:{
         width: 90,
-        height: 90
+        height: 90,
     },
-
+    
     textHeader: {
         fontSize: 20,
-        marginTop: 30,
+        marginTop: 20,
         marginBottom: 20,
-        fontFamily: 'Rubik_700Bold'
+        fontFamily: 'Rubik_700Bold',
+        textAlign: 'center'
+    },
+
+    indicationText:{
+        fontSize: 18,
+        fontFamily: 'Rubik_400Regular',
+        textAlign: 'justify'
     },
 
     textLabel: {
         fontSize: 16,
-        marginBottom: 5,
         marginTop: 20,
+        marginBottom: 5,
         fontFamily: 'Rubik_400Regular'
     },
 
     input: {
-        paddingLeft: 10,
         width: '100%',
-        height: 45,
+        height: 40,
         borderRadius: 8,
         borderWidth: 1,
         borderColor: '#4949E7',
-        fontFamily: 'Rubik_400Regular'
     },
 
     button:{
-        marginTop: 15,
+        marginTop: 30,
         alignItems: 'flex-end',
-        marginBottom: 180,
     },
 
     submitButton: {
-        marginTop: 35,
-        width: 155,
+        width: 150,
         height: 45,
         backgroundColor:'#4949E7',
         alignItems: 'center',
@@ -67,15 +70,10 @@ const styles = StyleSheet.create({
     submitButtonText: {
         fontSize: 16,
         fontFamily: 'Rubik_700Bold',
-        color: '#FFF'
+        color: '#FFF',
     },
 
-    textToRegistration: {
-        marginTop: 15,
-        fontSize: 11,
-        fontFamily: 'Rubik_400Regular',
-        textDecorationLine: 'underline'
-    },
-});
+
+})
 
 export default styles;

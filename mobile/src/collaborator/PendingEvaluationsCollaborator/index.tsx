@@ -8,19 +8,15 @@ import PageHeaderBack from '../../components/PageHeaderBack';
 
 import formImg from '../../assets/images/icons/form.png';
 
-function PendingEvaluationsManager() {
+function PendingEvaluationsCollaborator() {
     const {navigate} = useNavigation();
 
-    function handleNavigateToSelfEvaluatonManager() {      
-        navigate('SelfEvaluationManager');
+    function handleNavigateToSelfEvaluatonCollaborator() {      
+        navigate('SelfEvaluationCollaborator');
     }
 
-    function handleNavigateToEvaluateTeamManager() {      
-        navigate('EvaluateTeamManager');
-    }
-
-    function handleNavigateToEvaluateColleaguesManager() {
-        navigate('EvaluateColleaguesManager');
+    function handleNavigateToEvaluateColleaguesCollaborator() {
+        navigate('EvaluateColleaguesCollaborator');
     }
 
     return (
@@ -34,19 +30,13 @@ function PendingEvaluationsManager() {
                 </Text>
 
                 <View style= {styles.buttonsContainer}>
-                    <RectButton  onPress={handleNavigateToSelfEvaluatonManager} style={styles.buttons}>
+                    <RectButton  onPress={handleNavigateToSelfEvaluatonCollaborator} style={styles.buttons}>
                         <Text style={styles.textButton}>
                             Autoavaliação
                         </Text>
                     </RectButton>
 
-                    <RectButton onPress={handleNavigateToEvaluateTeamManager} style={styles.buttons}>
-                        <Text style={styles.textButton}>
-                            Avaliação da sua equipe
-                        </Text>
-                    </RectButton>
-
-                    <RectButton onPress={handleNavigateToEvaluateColleaguesManager}style={styles.buttons}>
+                    <RectButton onPress={handleNavigateToEvaluateColleaguesCollaborator}style={styles.buttons}>
                         <Text style={styles.textButton}>
                             Avaliação de colegas
                         </Text>
@@ -57,4 +47,4 @@ function PendingEvaluationsManager() {
         </View>
     );
 }
-export default PendingEvaluationsManager;
+export default PendingEvaluationsCollaborator;

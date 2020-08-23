@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
 
     container:{
         flex: 1,
-        backgroundColor: '#FFF'
+        backgroundColor: '#FFF',
     },
 
     insideBox:{
@@ -12,23 +12,25 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         backgroundColor: '#FFF',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
 
     chooseImg:{
         margin: 40,
         width: 90,
-        height: 90
+        height: 90,
     },
 
     textMainScreen: {
         marginBottom: 20,
         fontSize: 20,
-        fontFamily: 'Rubik_700Bold'
+        fontFamily: 'Rubik_700Bold',
     },
 
     buttonsContainer: {
-        alignItems:'center'
+        marginTop: 30,
+        width: '100%',
+        alignItems:'center',
     },
 
     buttons: {
@@ -39,13 +41,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#4949E7',
         alignItems: 'center',
         justifyContent: 'center',
-
     },
     
     textButton: {
         fontSize: 16,
         color: '#FFF',
-        fontFamily: 'Rubik_500Medium'
+        fontFamily: 'Rubik_500Medium',
     },
 });
 

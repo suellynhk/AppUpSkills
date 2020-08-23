@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
 
     insideBox:{ 
         marginTop: -40,
-        padding: 25,
+        padding: 30,
         borderRadius: 20,
         backgroundColor: '#FFF',
         justifyContent: 'center',
@@ -18,29 +18,42 @@ const styles = StyleSheet.create({
     },
 
     labelText: {
-        marginTop: 20,
-        marginBottom: 20,
+        marginBottom: 30,
         fontSize: 20,
         fontFamily: 'Rubik_700Bold'
     },
 
     confirmationText:{
-        margin: 15,
-        fontSize: 15,
+        fontSize: 18,
         fontFamily: 'Rubik_400Regular',
-        textAlign: "center"
+        textAlign: "justify"
     },
 
-    confirmationIcon: {
-        marginTop: 20,
-        marginBottom: 20,
+    informationIcon: {
+        marginBottom: 40,
         width: 90,
         height: 90
     },
 
+    input: {
+        marginTop: 10,
+        width: '100%',
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#4949E7',
+        backgroundColor: '#FFF',
+        fontFamily: 'Rubik_400Regular'
+    },
+
+    buttonAlign:{
+        width: '100%',
+        alignItems: 'flex-end',
+        justifyContent: 'flex-end',
+    },
+
     button: {
         marginTop: 30,
-        width: 270,
+        width: 155,
         height: 45,
         backgroundColor: '#4949E7',
         justifyContent: 'center',
@@ -48,21 +61,11 @@ const styles = StyleSheet.create({
         borderRadius: 8
     },
 
-    secondButton:{
-        marginTop: 25,
-        width: 270,
-        height: 45,
-        backgroundColor: '#65B3FF',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 8,
-    },
-
     buttonText: {
         fontSize: 16,
         fontFamily: 'Rubik_500Medium',
         color: '#FFF',
-    },
+    }
 });
 
 export default styles;

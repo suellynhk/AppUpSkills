@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Image, Alert } from 'react-native';
 
-import { RectButton, BorderlessButton } from 'react-native-gesture-handler';
+import { RectButton, BorderlessButton, ScrollView } from 'react-native-gesture-handler';
 import PageHeaderBack from '../../components/PageHeaderBack';
 
 import styles from './styles';
@@ -21,12 +21,12 @@ function Login() {
     const usuarios : Usuario[] = [
         {
             cpf: '111.111.111-11',
-            senha: '123mudar',
+            senha: '123456',
             gestor: true
         },
         {
             cpf: '222.222.222-22',
-            senha: '123mudar',
+            senha: '123456',
             gestor: false
         }
     ]
@@ -45,21 +45,14 @@ function Login() {
             return item.cpf === cpf && item.senha === senha;
         });
 
-        if (!usuariosFiltrados) {
+        if (!usuariosFiltrados || usuariosFiltrados.length === 0) {
             Alert.alert(
-                "Iihh...",
-                "Esse usuário não foi encontrado!",
+                "Ops...",
+                "Esse usuário não foi encontrado! Preencha os campos corretamente!",
             )
             return;
         };
 
-        if (usuariosFiltrados.length === 0 ) {
-            Alert.alert(
-                "Ops...",
-                "Você precisa preencher todos os campos!",
-            )
-            return;
-        };
 
         const usuario = usuariosFiltrados[0];
        console.log(usuario)
@@ -73,6 +66,7 @@ function Login() {
     };
 
     return(
+        <ScrollView>
         <View style={styles.container}> 
             <PageHeaderBack />
                 <View style={styles.loginForm}>
@@ -102,6 +96,7 @@ function Login() {
                     </View>
                 </View>
         </View>
+        </ScrollView>
     )
 }
 

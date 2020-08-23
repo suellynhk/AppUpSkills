@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
 
     textEvaluation:{
         marginTop: 10,
-        fontSize: 18,
+        fontSize: 15,
         fontFamily: 'Rubik_400Regular'
 
     },
@@ -31,16 +31,15 @@ const styles = StyleSheet.create({
     },
 
     names: {
-        alignItems: 'flex-start',
         marginTop: 20,
-        fontSize: 16,
+        fontSize: 15,
         fontFamily: 'Rubik_500Medium'
     },
 
-    teamImg:{
+    colleaguesImg:{
         marginBottom: 20,
-        width: 100,
-        height: 100
+        width: 90,
+        height: 90
     },
 
     textPendingEvaluation: {
@@ -50,17 +49,17 @@ const styles = StyleSheet.create({
     },
 
     buttonsContainer: {
-        marginTop: 20, 
-        width: '100%',
+  
+        width: '65%',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center',
     },
 
     buttons: {
         borderRadius: 8,
-        width: 90,
-        height: 40,
+        marginTop: 15,
+        width: 100,
+        height: 45,
         backgroundColor: '#4949E7',
         alignItems: 'center',
         justifyContent: 'center',
@@ -70,7 +69,7 @@ const styles = StyleSheet.create({
     textButton: {
         fontSize: 16,
         color: '#FFF',
-        fontFamily: 'Rubik_500Medium',
+        fontFamily: 'Rubik_500Medium'
     },
 });
 

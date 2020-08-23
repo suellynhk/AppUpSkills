@@ -7,14 +7,14 @@ import { useNavigation } from '@react-navigation/native';
 import { RectButton, ScrollView } from 'react-native-gesture-handler';
 import answeredIcon from '../../assets/images/icons/answered.png';
 
-function CompletedQuestionnaireManager() {
+function CompletedQuestionnaireCollaborator() {
     const { navigate } = useNavigation();
-    function handleNavigateToMainPageManager() {      
-        navigate('MainScreenManager');
+    function handleNavigateToMainPageCollaborator() {      
+        navigate('MainScreenCollaborator');
     }
     
-    function handleNavigateToIndicateManager() {
-        navigate('IndicateSomeoneManager');
+    function handleNavigateToIndicateCollaborator() {
+        navigate('IndicateSomeoneCollaborator');
     }
 
     return (
@@ -30,11 +30,11 @@ function CompletedQuestionnaireManager() {
                     Não esqueça de indicar os colaboradores para que eles possam te avaliar! 
                 </Text> 
 
-                <RectButton onPress={handleNavigateToIndicateManager} style={styles.button} >
+                <RectButton onPress={handleNavigateToIndicateCollaborator} style={styles.button} >
                   <Text style={styles.buttonText}> Indicar colaboradores </Text> 
                 </RectButton>
      
-                <RectButton onPress={handleNavigateToMainPageManager} style={styles.secondButton} >
+                <RectButton onPress={handleNavigateToMainPageCollaborator} style={styles.secondButton} >
                   <Text style={styles.buttonText}> Retornar ao menu principal </Text> 
                 </RectButton>
             </View>
@@ -44,4 +44,4 @@ function CompletedQuestionnaireManager() {
 
 }
 
-export default  CompletedQuestionnaireManager;
+export default  CompletedQuestionnaireCollaborator;

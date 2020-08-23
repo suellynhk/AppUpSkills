@@ -24,6 +24,25 @@ import PeopleManagement from '../manager/QuestionnaireManager/PeopleManagement';
 import CompletedQuestionnaireManager from '../manager/CompletedQuestionnaireManager';
 import MainScreenCollaborator from '../collaborator/MainScreenCollaborator';
 import FeedbackManager from '../manager/FeedbackManager';
+import EvaluateColleaguesManager from '../manager/EvaluateColleaguesManager';
+import RefusedEvaluationManager from '../manager/RefusedEvaluationManager';
+import SkillsScreenManager from '../manager/SkillsScreenManager';
+import SkillsScreenManagerS from '../manager/SkillsScreenManagerS';
+import EvaluateTeamManager from '../manager/EvaluateTeamManager';
+import FlexibilityCollaborator from '../collaborator/QuestionnaireCollaborator/FlexibilityCollaborator';
+import ComplexProblemsSolvingCollaborator from '../collaborator/QuestionnaireCollaborator/ComplexProblemsSolvingCollaborator';
+import EmotionalIntelligenceCollaborator from '../collaborator/QuestionnaireCollaborator/EmotionalIntelligenceColaborator';
+import JudgmentDecisionMakingCollaborator from '../collaborator/QuestionnaireCollaborator/JudgmentDecisionMakingCollaborator';
+import FeedbackCollaborator from '../collaborator/FeedbackCollaborator';
+import CompletedQuestionnaireCollaborator from '../collaborator/CompletedQuestionnaireCollaborator';
+import PendingEvaluationsCollaborator from '../collaborator/PendingEvaluationsCollaborator';
+import IndicateSomeoneCollaborator from '../collaborator/IndicateSomeoneCollaborator';
+import CompletedIndicationCollaborator from '../collaborator/CompletedIndicationCollaborator';
+import SelfEvaluationCollaborator from '../collaborator/SelfEvaluationCollaborator';
+import SkillsScreenCollaborator from '../collaborator/SkillsScreenCollaborator';
+import RefusedEvaluationCollaborator from '../collaborator/RefusedEvaluationCollaborator';
+import EvaluateColleaguesCollaborator from '../collaborator/EvaluateColleaguesCollaborator';
+
 
 
 const { Navigator, Screen } = createStackNavigator();
@@ -38,6 +57,7 @@ function AppStack() {
                 <Screen name="Registration" component={Registration} />
                 <Screen name="ConfirmedRegistration" component={ConfirmedRegistration} />
 
+
                 <Screen name="MainScreenManager" component={MainScreenManager} />
                 <Screen name="PendingEvaluationsManager" component={PendingEvaluationsManager} />
                 <Screen name="IndicateSomeoneManager" component={IndicateSomeoneManager} />
@@ -47,7 +67,12 @@ function AppStack() {
                 <Screen name="ValidatedIndication" component={ValidatedIndication} />
                 <Screen name="RefusedIndication" component={RefusedIndication} />
                 <Screen name="DashboardManager" component={DashboardManager} />
-                
+                <Screen name="EvaluateColleaguesManager" component={EvaluateColleaguesManager} />
+                <Screen name="RefusedEvaluationManager" component={RefusedEvaluationManager} />
+                <Screen name="SkillsScreenManager" component={SkillsScreenManager} />
+                <Screen name="SkillsScreenManagerS" component={SkillsScreenManagerS} />
+                <Screen name="EvaluateTeamManager" component={EvaluateTeamManager} />
+
                 <Screen name="FlexibilityManager" component={FlexibilityManager} />
                 <Screen name="ComplexProblemsSolvingManager" component={ComplexProblemsSolvingManager} />
                 <Screen name="EmotionalIntelligenceManager" component={EmotionalIntelligenceManager} />
@@ -56,8 +81,23 @@ function AppStack() {
                 <Screen name="FeedbackManager" component={FeedbackManager} />
                 <Screen name="CompletedQuestionnaireManager" component={CompletedQuestionnaireManager} />
 
+
                 <Screen name="MainScreenCollaborator" component={MainScreenCollaborator} />
-      
+                <Screen name="PendingEvaluationsCollaborator" component={PendingEvaluationsCollaborator} />
+                <Screen name="IndicateSomeoneCollaborator" component={IndicateSomeoneCollaborator} />
+                <Screen name="CompletedIndicationCollaborator" component={CompletedIndicationCollaborator} />
+                <Screen name="SelfEvaluationCollaborator" component={SelfEvaluationCollaborator} />
+                <Screen name="RefusedEvaluationCollaborator" component={RefusedEvaluationCollaborator} />
+                <Screen name="SkillsScreenCollaborator" component={SkillsScreenCollaborator} />
+                <Screen name="EvaluateColleaguesCollaborator" component={EvaluateColleaguesCollaborator} />
+
+                <Screen name="FlexibilityCollaborator" component={FlexibilityCollaborator} />
+                <Screen name="ComplexProblemsSolvingCollaborator" component={ComplexProblemsSolvingCollaborator} />
+                <Screen name="EmotionalIntelligenceCollaborator" component={EmotionalIntelligenceCollaborator} />
+                <Screen name="JudgmentDecisionMakingCollaborator" component={JudgmentDecisionMakingCollaborator} />
+                <Screen name="FeedbackCollaborator" component={FeedbackCollaborator} />
+                <Screen name="CompletedQuestionnaireCollaborator" component={CompletedQuestionnaireCollaborator} />
+               
                 </Navigator>
         </NavigationContainer>
     )

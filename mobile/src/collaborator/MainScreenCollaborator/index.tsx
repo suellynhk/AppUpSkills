@@ -12,7 +12,7 @@ import chooseImg from '../../assets/images/icons/choose.png';
 function MainScreenCollaborator
 () {
    const {navigate} = useNavigation();
-/*
+
     function handleNavigateToEvaluationsCollaborator
     () {      
         navigate('PendingEvaluationsCollaborator');
@@ -27,7 +27,7 @@ function MainScreenCollaborator
     () {      
         navigate('DashboardCollaborator');
     }
-*/
+
 
     return (
         <View style={styles.container}>
@@ -40,19 +40,19 @@ function MainScreenCollaborator
                 </Text>
 
                 <View style= {styles.buttonsContainer}>
-                    <RectButton /*onPress={handleNavigateToEvaluationsCollaborator}*/ style={styles.buttons}>
+                    <RectButton onPress={handleNavigateToEvaluationsCollaborator} style={styles.buttons}>
                         <Text style={styles.textButton}>
                             Avaliações pendentes
                         </Text>
                     </RectButton>
 
-                    <RectButton /*onPress={handleNavigateToIndicationCollaborator}*/ style={styles.buttons}>
+                    <RectButton onPress={handleNavigateToIndicationCollaborator} style={styles.buttons}>
                         <Text style={styles.textButton}>
                             Indicar alguém para te avaliar
                         </Text>
                     </RectButton>
 
-                    <RectButton /*onPress={handleNavigateToDashboardCollaborator}*/ style={styles.buttons}>
+                    <RectButton onPress={handleNavigateToDashboardCollaborator}style={styles.buttons}>
                         <Text style={styles.textButton}>
                             Dashboard e Microlearning
                         </Text>
