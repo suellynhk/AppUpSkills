@@ -27,7 +27,7 @@ function EvaluateColleaguesCollaborator() {
 
   
     return (
-        <ScrollView >
+        <ScrollView  contentContainerStyle={styles.container}>
             <View style={styles.container}>
                 <PageHeaderBack />
                 
@@ -45,7 +45,7 @@ function EvaluateColleaguesCollaborator() {
                     </Text>
 
                     <View style={styles.indications}>
-                        <Text style={styles.names}>Sandra Dias</Text>
+                        <Text style={styles.names}>Moacir Salvador</Text>
                         <View style= {styles.buttonsContainer}>
                             <RectButton  onPress={handleNavigateToSkillsScreenCollaborator} style={styles.buttons}>
                                 <Text style={styles.textButton}>
@@ -61,23 +61,7 @@ function EvaluateColleaguesCollaborator() {
                     </View>
 
                     <View style={styles.indications}>
-                        <Text style={styles.names}>Matheus Oliveira (Gestor)</Text>
-                        <View style= {styles.buttonsContainer}>
-                            <RectButton onPress={handleNavigateToSkillsScreenCollaboratorS} style={styles.buttons}>
-                                <Text style={styles.textButton}>
-                                    Sim
-                                </Text>
-                            </RectButton>
-                            <RectButton onPress={handleNavigateToRefusedEvaluation} style={styles.buttons}>
-                                <Text style={styles.textButton}>
-                                    Não
-                                </Text>
-                            </RectButton>
-                        </View>
-                    </View>
-
-                    <View style={styles.indications}>
-                        <Text style={styles.names}>Augusto Vaz</Text>
+                        <Text style={styles.names}>Pedro Machado</Text>
                         <View style= {styles.buttonsContainer}>
                             <RectButton  onPress={handleNavigateToSkillsScreenCollaborator} style={styles.buttons}>
                                 <Text style={styles.textButton}>

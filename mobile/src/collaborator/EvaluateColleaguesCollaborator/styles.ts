@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     },
 
     names: {
-        marginTop: 20,
+        marginTop: 30,
         fontSize: 15,
         fontFamily: 'Rubik_500Medium'
     },
@@ -49,7 +49,6 @@ const styles = StyleSheet.create({
     },
 
     buttonsContainer: {
-  
         width: '65%',
         flexDirection: 'row',
         justifyContent: 'space-between',

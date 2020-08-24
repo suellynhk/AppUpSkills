@@ -11,6 +11,7 @@ import videoIcon from '../../assets/images/icons/video.png';
 
 
 function MicrolearningIntro() {
+
     const { navigate } = useNavigation();
     function handleNavigateToCreateAccountPage() {      
            navigate('Registration');
@@ -30,8 +31,8 @@ function MicrolearningIntro() {
                 <Video
                 source={require('../../assets/microlearning-intro.mp4')}
                 rate={1.0}
-                volume={1.0}
-                isMuted={false} 
+                volume={0.5}
+                isMuted={false}
                 resizeMode={Video.RESIZE_MODE_CONTAIN}
                 shouldPlay={true}
                 isLooping={false}

@@ -11,7 +11,7 @@ interface CarouselItem{
 
 const Carrossel: React.FC<CarouselItem> = ({ title, image }) => {
   
-  const carouselItems : CarouselItem[] = [
+  const carouselItems = [
     {
       title: 'Empatia',
       image: 'https://d1x4bjge7r9nas.cloudfront.net/wp-content/uploads/2016/04/23214423/tumblr_static_tumblr_m78u9iwzjz1rbs3w3o1_500_large.jpg'
