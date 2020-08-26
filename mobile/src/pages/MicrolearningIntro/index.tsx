@@ -37,7 +37,7 @@ function MicrolearningIntro() {
                 shouldPlay={true}
                 isLooping={false}
                 useNativeControls={true}
-                style={{ width: 350, height:190 }}
+                style={{ width:'100%', height: 180}}
                 />
 
                 <View style={styles.button}>

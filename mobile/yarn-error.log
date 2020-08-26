@@ -1,8 +1,8 @@
 Arguments: 
-  /home/suellyn/.nvm/versions/node/v12.18.3/bin/node /usr/share/yarn/bin/yarn.js init
+  /home/suellyn/.nvm/versions/node/v12.18.3/bin/node /usr/share/yarn/bin/yarn.js add @types/react-hook-carousel
 
 PATH: 
-  /home/suellyn/.nvm/versions/node/v12.18.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/suellyn/.dotnet/tools
+  /home/suellyn/.nvm/versions/node/v12.18.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/suellyn/.dotnet/tools:/home/suellyn/.dotnet/tools
 
 Yarn version: 
   1.22.4
@@ -14,17 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:137008:13)
-      at Interface.emit (events.js:315:20)
-      at Interface._ttyWrite (readline.js:868:16)
-      at ReadStream.onkeypress (readline.js:205:10)
-      at ReadStream.emit (events.js:315:20)
-      at emitKeys (internal/readline/utils.js:335:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (readline.js:1137:36)
-      at ReadStream.emit (events.js:315:20)
-      at addChunk (_stream_readable.js:295:12)
+  Error: https://registry.yarnpkg.com/@types%2freact-hook-carousel: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66987:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1220:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
 
 npm manifest: 
   {
@@ -55,6 +55,7 @@ npm manifest:
       "native-base": "^2.13.13",
       "react": "16.13.1",
       "react-dom": "~16.11.0",
+      "react-hook-carousel": "^0.0.3",
       "react-native": "0.63.2",
       "react-native-gesture-handler": "~1.6.0",
       "react-native-linear-gradient": "^2.5.6",
@@ -4366,6 +4367,11 @@ Lockfile:
       react-tween-state "^0.1.5"
       tween-functions "^1.0.1"
   
+  natives@^1.1.6:
+    version "1.1.6"
+    resolved "https://registry.yarnpkg.com/natives/-/natives-1.1.6.tgz#a603b4a498ab77173612b9ea1acdec4d980f00bb"
+    integrity sha512-6+TDFewD4yxY14ptjKaS63GVdtKiES1pTPyxn9Jb0rBqPMZ7VcCiooEhPNsr+mqHtMGxa/5c/HhcC4uPEUw/nA==
+  
   negotiator@0.6.2:
     version "0.6.2"
     resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
@@ -4865,6 +4871,13 @@ Lockfile:
       object-assign "^4.1.1"
       prop-types "^15.6.2"
       scheduler "^0.17.0"
+  
+  react-hook-carousel@^0.0.3:
+    version "0.0.3"
+    resolved "https://registry.yarnpkg.com/react-hook-carousel/-/react-hook-carousel-0.0.3.tgz#f9de1e81e6eedf0cf4a01f28e90fdc1784a914ef"
+    integrity sha512-hBVG2VZf2+VoWSh4lk92JqhimAYrZfKDDyEPSO1AJtS5q+WXmbMRC7INkEOBVOUEwcHQqiqCw095EBezp1KrZQ==
+    dependencies:
+      swiped-events "^1.0.9"
   
   react-is@^16.12.0, react-is@^16.13.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
     version "16.13.1"
@@ -5695,6 +5708,13 @@ Lockfile:
     integrity sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
     dependencies:
       has-flag "^4.0.0"
+  
+  swiped-events@^1.0.9:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/swiped-events/-/swiped-events-1.1.0.tgz#8b8dc6d1c9fba720ceced788fb4b0086665b5aa6"
+    integrity sha512-dKx3Ikk+Z6nVtrOAGurogDOuSYdgCZiP4S9y8+d3tWX1zCNho8SE2jqhrZzErTa/mXm4jkWp2vEekMifFBAi7A==
+    dependencies:
+      natives "^1.1.6"
   
   symbol-observable@1.0.1:
     version "1.0.1"

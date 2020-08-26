@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { RectButton } from 'react-native-gesture-handler';
+import { RectButton, ScrollView } from 'react-native-gesture-handler';
 
 import styles from './styles';
 
@@ -20,44 +20,43 @@ function Landing() {
     }
 
     return (
+                
         <View style={styles.container}>
             <View style={styles.header}>
-                <Text style={styles.textHeader}>
-                    Up {'\n'} Skills
-                </Text>
+                    <Text style={styles.textHeader}>
+                        Up {'\n'} Skills
+                    </Text>
             </View>
-              
-            <View style={styles.insideBox}>
-                <Image source={landingImg} style={styles.landingImg}/>
 
-                <Text style={styles.landingText}>
-                    Olá! {'\n'}
-                    Seja bem-vindo(a) à nossa {'\n'}
-                    plataforma de avaliação de {'\n'}
-                    Soft Skills!
-                </Text>
+                <View style={styles.insideBox}>
+                    <Image source={landingImg} style={styles.landingImg}/>
 
-                <Text style={styles.landingQuestion}>
-                    É a sua primeira vez aqui?
-                </Text>
+                    <Text style={styles.landingText}>
+                        Olá! {'\n'}
+                        Seja bem-vindo(a) à nossa {'\n'}
+                        plataforma de avaliação de {'\n'}
+                        Soft Skills!
+                    </Text>
 
-                <View style= {styles.buttonsContainer}>
-                    <RectButton onPress={handleNavigateToMicrolearningIntroPage} style={styles.yesButton}>
-                        <Text style={styles.textButton}>
-                            Sim
-                        </Text>
-                    </RectButton>
+                    <Text style={styles.landingQuestion}>
+                        É a sua primeira vez aqui?
+                    </Text>
 
-                    <RectButton onPress={handleNavigateToLoginPage} style={styles.noButton}>
-                        <Text style={styles.textButton}>
-                            Não
-                        </Text>
-                    </RectButton>
-                </View>
- 
-                    
-            </View>
-        </View> 
+                    <View style= {styles.buttonsContainer}>
+                        <RectButton onPress={handleNavigateToMicrolearningIntroPage} style={styles.yesButton}>
+                            <Text style={styles.textButton}>
+                                Sim
+                            </Text>
+                        </RectButton>
+
+                        <RectButton onPress={handleNavigateToLoginPage} style={styles.noButton}>
+                            <Text style={styles.textButton}>
+                                Não
+                            </Text>
+                        </RectButton>
+                    </View>
+                </View>   
+        </View>
     );   
 }
 

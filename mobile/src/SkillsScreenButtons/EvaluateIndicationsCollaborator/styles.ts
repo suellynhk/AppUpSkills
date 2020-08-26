@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     insideBox:{
         marginTop: -40,
         borderRadius: 20,
-        padding: 35,
+        padding: 40,
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center',
@@ -29,43 +29,30 @@ const styles = StyleSheet.create({
         fontFamily: 'Rubik_700Bold'
     },
 
-    checkBoxContainer: {
-        width: '100%',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        marginTop: 30,
-    },
-
     buttonContainer:{
         width: '100%',
-        alignItems: 'flex-end',
-        justifyContent: 'flex-end',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 
     button: {
         borderRadius: 8,
-        marginTop: 40,
-        marginBottom: 30,
-        width: 150,
+        marginTop: 20,
+        marginBottom: 10,
         height: 45,
+        width: '100%',
         backgroundColor: '#4949E7',
         alignItems: 'center',
         justifyContent: 'center',
     },
 
     textButton:{
-        fontSize: 18,
+        fontSize: 14,
         fontFamily: 'Rubik_500Medium',
         alignItems: 'flex-end',
         color:'#FFF'
     },
-    
-    skillsTitle: {
-        fontSize: 14,
-        fontFamily: 'Rubik_500Medium',
-        alignItems: 'flex-start',
-    },
+
 });
 
 export default styles;

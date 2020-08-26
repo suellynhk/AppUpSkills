@@ -7,7 +7,6 @@ import styles from './styles';
 import PageHeaderBack from '../../components/PageHeaderBack';
 
 import formImg from '../../assets/images/icons/form.png';
-import SkillsScreenManagerS from '../../manager/SkillsScreenManagerS';
 
 function PendingEvaluationsCollaborator() {
     const {navigate} = useNavigation();
@@ -20,8 +19,8 @@ function PendingEvaluationsCollaborator() {
         navigate('EvaluateColleaguesCollaborator');
     }
 
-    function handleNavigateToEvaluateTheManager() {
-        navigate('SkillsScreenManagerS')
+    function handleNavigateToEvaluateIndicationsManager() {
+        navigate('EvaluateIndicationsManager2')
     }
 
     return (
@@ -47,7 +46,7 @@ function PendingEvaluationsCollaborator() {
                         </Text>
                     </RectButton>
 
-                    <RectButton onPress={handleNavigateToEvaluateTheManager}style={styles.buttons}>
+                    <RectButton onPress={handleNavigateToEvaluateIndicationsManager}style={styles.buttons}>
                         <Text style={styles.textButton}>
                             Avaliação do seu Gestor
                         </Text>

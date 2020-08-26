@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
 
     insideBox:{
         marginTop: -40,
-        padding: 16,
+        padding: 20,
         borderRadius: 20,
         backgroundColor: '#FFF',
         justifyContent: 'center',
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         marginBottom: 20,
         margin: 10,
-        fontSize: 18,
+        fontSize: 17,
         textAlign: 'justify'
     },
 
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
 
     rightIcon: {
         position:'relative',
-        marginTop: 140,
+        marginTop: 100,
         width: 50,
         height: 50
     },

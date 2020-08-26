@@ -12,15 +12,10 @@ function EvaluateColleaguesCollaborator() {
     const {navigate} = useNavigation();
   
 
-    function handleNavigateToSkillsScreenCollaborator() {
-        navigate('SkillsScreenCollaborator');
+    function handleNavigateToEvaluateIndicationsCollaborator() {
+        navigate('EvaluateIndicationsCollaborator2');
     }
 
-
-    function handleNavigateToSkillsScreenCollaboratorS() {
-        navigate('SkillsScreenCollaboratorS');
-    }
-  
     function handleNavigateToRefusedEvaluation() {
         navigate('RefusedEvaluationCollaborator');
     }
@@ -47,7 +42,7 @@ function EvaluateColleaguesCollaborator() {
                     <View style={styles.indications}>
                         <Text style={styles.names}>Moacir Salvador</Text>
                         <View style= {styles.buttonsContainer}>
-                            <RectButton  onPress={handleNavigateToSkillsScreenCollaborator} style={styles.buttons}>
+                            <RectButton  onPress={handleNavigateToEvaluateIndicationsCollaborator} style={styles.buttons}>
                                 <Text style={styles.textButton}>
                                     Sim
                                 </Text>
@@ -63,7 +58,7 @@ function EvaluateColleaguesCollaborator() {
                     <View style={styles.indications}>
                         <Text style={styles.names}>Pedro Machado</Text>
                         <View style= {styles.buttonsContainer}>
-                            <RectButton  onPress={handleNavigateToSkillsScreenCollaborator} style={styles.buttons}>
+                            <RectButton  onPress={handleNavigateToEvaluateIndicationsCollaborator} style={styles.buttons}>
                                 <Text style={styles.textButton}>
                                     Sim
                                 </Text>

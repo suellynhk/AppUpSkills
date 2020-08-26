@@ -12,13 +12,13 @@ function EvaluateColleaguesManager() {
     const {navigate} = useNavigation();
   
 
-    function handleNavigateToSkillsScreenManager() {
-        navigate('SkillsScreenManager');
+    function handleNavigateToEvaluateIndicationsCollaborator() {
+        navigate('EvaluateIndicationsCollaborator');
     }
 
 
-    function handleNavigateToSkillsScreenManagerS() {
-        navigate('SkillsScreenManagerS');
+    function handleNavigateToEvaluateIndicationsManager() {
+        navigate('EvaluateIndicationsManager');
     }
   
     function handleNavigateToRefusedEvaluation() {
@@ -47,7 +47,7 @@ function EvaluateColleaguesManager() {
                     <View style={styles.indications}>
                         <Text style={styles.names}>Sandra Dias</Text>
                         <View style= {styles.buttonsContainer}>
-                            <RectButton  onPress={handleNavigateToSkillsScreenManager} style={styles.buttons}>
+                            <RectButton  onPress={handleNavigateToEvaluateIndicationsCollaborator} style={styles.buttons}>
                                 <Text style={styles.textButton}>
                                     Sim
                                 </Text>
@@ -63,7 +63,7 @@ function EvaluateColleaguesManager() {
                     <View style={styles.indications}>
                         <Text style={styles.names}>Matheus Oliveira (Gestor)</Text>
                         <View style= {styles.buttonsContainer}>
-                            <RectButton onPress={handleNavigateToSkillsScreenManagerS} style={styles.buttons}>
+                            <RectButton onPress={handleNavigateToEvaluateIndicationsManager} style={styles.buttons}>
                                 <Text style={styles.textButton}>
                                     Sim
                                 </Text>
@@ -79,7 +79,7 @@ function EvaluateColleaguesManager() {
                     <View style={styles.indications}>
                         <Text style={styles.names}>Augusto Vaz</Text>
                         <View style= {styles.buttonsContainer}>
-                            <RectButton  onPress={handleNavigateToSkillsScreenManager} style={styles.buttons}>
+                            <RectButton  onPress={handleNavigateToEvaluateIndicationsCollaborator} style={styles.buttons}>
                                 <Text style={styles.textButton}>
                                     Sim
                                 </Text>

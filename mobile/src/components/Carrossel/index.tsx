@@ -4,13 +4,11 @@ import Carousel from 'react-native-snap-carousel';
 import styles from './styles';
 
 interface CarouselItem{
-    title: string,
-    image: string
-  };
-
+  title: string,
+  image: string
+};
 
 const Carrossel: React.FC<CarouselItem> = ({ title, image }) => {
-  
   const carouselItems = [
     {
       title: 'Empatia',

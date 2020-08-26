@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { RectButton } from 'react-native-gesture-handler';
+import { RectButton, ScrollView } from 'react-native-gesture-handler';
 
 import styles from './styles';
 
@@ -20,7 +20,9 @@ function SelfEvaluationCollaborator() {
     }
     
     return (
+       
         <View style={styles.container}>
+             <ScrollView>
             <PageHeaderBack />
               
             <View style={styles.insideBox}>
@@ -67,7 +69,9 @@ function SelfEvaluationCollaborator() {
                     </RectButton>
                 </View> 
             </View>
+            </ScrollView>
         </View>
+      
     );
 }
 export default SelfEvaluationCollaborator;

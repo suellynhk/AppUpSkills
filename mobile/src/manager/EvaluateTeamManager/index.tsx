@@ -12,8 +12,8 @@ function EvaluateTeamManager() {
     const {navigate} = useNavigation();
   
 
-    function handleNavigateToSkillsScreenManager() {
-        navigate('SkillsScreenManager');
+    function handleNavigateToEvaluateIndicationsCollaborator() {
+        navigate('EvaluateIndicationsCollaborator');
     }
 
     return (
@@ -36,7 +36,7 @@ function EvaluateTeamManager() {
                       
                         <View style= {styles.buttonsContainer}>
                         <Text style={styles.names}>Mariana Silveira </Text>
-                            <RectButton onPress={handleNavigateToSkillsScreenManager} style={styles.buttons}>
+                            <RectButton onPress={handleNavigateToEvaluateIndicationsCollaborator} style={styles.buttons}>
                                 <Text style={styles.textButton}>
                                     Iniciar
                                 </Text>
@@ -47,7 +47,7 @@ function EvaluateTeamManager() {
                     <View style={styles.indications}>
                         <View style= {styles.buttonsContainer}>
                         <Text style={styles.names}>Fernando Assis</Text>
-                            <RectButton  onPress={handleNavigateToSkillsScreenManager} style={styles.buttons}>
+                            <RectButton  onPress={handleNavigateToEvaluateIndicationsCollaborator} style={styles.buttons}>
                                 <Text style={styles.textButton}>
                                     Iniciar
                                 </Text>
@@ -58,7 +58,7 @@ function EvaluateTeamManager() {
                     <View style={styles.indications}>
                         <View style= {styles.buttonsContainer}>
                         <Text style={styles.names}>Paulo Soares</Text>
-                            <RectButton  onPress={handleNavigateToSkillsScreenManager} style={styles.buttons}>
+                            <RectButton  onPress={handleNavigateToEvaluateIndicationsCollaborator} style={styles.buttons}>
                                 <Text style={styles.textButton}>
                                     Iniciar
                                 </Text>

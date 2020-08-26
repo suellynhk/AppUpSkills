@@ -10,14 +10,14 @@ import chooseImg from '../../assets/images/icons/choose.png';
 import { Checkbox } from 'react-native-paper';
 
 
-function SkillsScreenManager() {
+function SkillsScreenManagers() {
     const [checked, setChecked] = React.useState(false);
     const [checked1, setChecked1] = React.useState(false);
     const [checked2, setChecked2] = React.useState(false);
     const [checked3, setChecked3] = React.useState(false);
+    const [checked4, setChecked4] = React.useState(false);
 
    
-
     return (
         <ScrollView>
             <View style={styles.container}>
@@ -31,7 +31,7 @@ function SkillsScreenManager() {
 
                     <View style= {styles.checkBoxContainer}>
                         <Text style={styles.skillsTitle}>
-                                Flexibilidade
+                                Liderança
                         </Text>
                         <Checkbox
                             uncheckedColor='#363636'
@@ -42,10 +42,10 @@ function SkillsScreenManager() {
                             }}
                         />
                     </View>
-                    
+
                     <View style= {styles.checkBoxContainer}>
                         <Text style={styles.skillsTitle}>
-                                Resolução de problemas complexos
+                                Flexibilidade
                         </Text>
                         <Checkbox
                             uncheckedColor='#363636'
@@ -56,10 +56,10 @@ function SkillsScreenManager() {
                             }}
                         />
                     </View>
-
+                    
                     <View style= {styles.checkBoxContainer}>
                         <Text style={styles.skillsTitle}>
-                                Inteligência emocional
+                                Resolução de problemas complexos
                         </Text>
                         <Checkbox
                             uncheckedColor='#363636'
@@ -73,7 +73,7 @@ function SkillsScreenManager() {
 
                     <View style= {styles.checkBoxContainer}>
                         <Text style={styles.skillsTitle}>
-                                Julgamento e tomada de decisão
+                                Inteligência emocional
                         </Text>
                         <Checkbox
                             uncheckedColor='#363636'
@@ -81,6 +81,20 @@ function SkillsScreenManager() {
                             status={checked3 ? 'checked' : 'unchecked'}
                             onPress={() => {
                             setChecked3(!checked3);
+                            }}
+                        />
+                    </View>
+
+                    <View style= {styles.checkBoxContainer}>
+                        <Text style={styles.skillsTitle}>
+                                Julgamento e tomada de decisão
+                        </Text>
+                        <Checkbox
+                            uncheckedColor='#363636'
+                            color='#4949E7'
+                            status={checked4 ? 'checked' : 'unchecked'}
+                            onPress={() => {
+                            setChecked4(!checked4);
                             }}
                         />
                     </View>
@@ -100,8 +114,5 @@ function SkillsScreenManager() {
         </ScrollView>
     );
 }
-export default SkillsScreenManager;
+export default SkillsScreenManagers;
 
-
-
-  
