@@ -59,7 +59,7 @@ function MainScreenManager() {
 
                     <RectButton onPress={handleNavigateToDashboardManager} style={styles.buttons}>
                         <Text style={styles.textButton}>
-                            Dashboard e Microlearning
+                            Dashboard
                         </Text>
                     </RectButton>
 

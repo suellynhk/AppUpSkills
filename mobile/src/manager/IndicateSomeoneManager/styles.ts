@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
     },
 
     indication:{
+        flex: 1,
         padding: 25,
         marginTop: -40,
         borderRadius: 20,
@@ -31,13 +32,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Rubik_700Bold',
         textAlign: 'center'
     },
-
-    indicationText:{
-        fontSize: 18,
-        fontFamily: 'Rubik_400Regular',
-        textAlign: 'justify'
-    },
-
+    
     textLabel: {
         fontSize: 16,
         marginTop: 20,

@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
     },
 
     indication:{
+        flex: 1,
         padding: 25,
         marginTop: -40,
         borderRadius: 20,
@@ -70,9 +71,8 @@ const styles = StyleSheet.create({
     submitButtonText: {
         fontSize: 16,
         fontFamily: 'Rubik_700Bold',
-        color: '#FFF',
-    },
-
+        color: '#FFF'
+    }
 
 })
 

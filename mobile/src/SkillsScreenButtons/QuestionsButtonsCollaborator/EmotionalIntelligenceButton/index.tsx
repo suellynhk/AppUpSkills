@@ -22,11 +22,12 @@ function EmotionalIntelligenceButton() {
     } 
 
     return (
-        <ScrollView>
+        
             <View style={styles.container}>
             
                 <PageHeader />
                 <View style={styles.insideBox}>
+                <ScrollView>
                 <Text style={styles.titleText}> Inteligência Emocional </Text>
                         <Text style={styles.descriptionText}>
                         {'  '}Capacidade de reconhecer e avaliar os seus próprios sentimentos 
@@ -62,11 +63,10 @@ function EmotionalIntelligenceButton() {
                             </Text>
                         </RectButton>
                     </View>
- 
+                </ScrollView>
                 </View>
             </View>
-        </ScrollView>
-
+       
     );
 }
 export default EmotionalIntelligenceButton;

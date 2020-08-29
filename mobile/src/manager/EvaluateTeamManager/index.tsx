@@ -17,11 +17,13 @@ function EvaluateTeamManager() {
     }
 
     return (
-        <ScrollView contentContainerStyle={{flex:1}}>
+       
             <View style={styles.container}>
                 <PageHeaderBack />
                 
                 <View style={styles.insideBox}>
+                <ScrollView >
+                    <View style={styles.boxAlign}>
                     <Image source={teamImg} style={styles.teamImg}/>
 
                     <Text style={styles.textPendingEvaluation}>
@@ -65,10 +67,10 @@ function EvaluateTeamManager() {
                             </RectButton>
                         </View>
                     </View>
-
+                    </View>
+                </ScrollView>  
                 </View>    
             </View>
-        </ScrollView>  
-    );
+     );   
 }
 export default EvaluateTeamManager;

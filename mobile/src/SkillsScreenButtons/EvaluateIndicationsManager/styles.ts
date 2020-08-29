@@ -8,16 +8,17 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
+        flex: 1,
         marginTop: -40,
         borderRadius: 20,
         padding: 40,
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: '40%',
     },
 
     chooseImg:{
+        alignSelf: 'center',
         marginBottom: 30,
         width: 90,
         height: 90

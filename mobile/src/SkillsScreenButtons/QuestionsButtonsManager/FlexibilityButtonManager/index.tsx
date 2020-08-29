@@ -20,11 +20,12 @@ function FlexibilityButtonManager() {
     } 
 
     return (
-        <ScrollView>
+        
             <View style={styles.container}>
             
                 <PageHeader />
                 <View style={styles.insideBox}>
+                <ScrollView>
                 <Text style={styles.titleText}> Flexibilidade</Text>
                         <Text style={styles.descriptionText}>
                         {'  '}Capacidade de criar ou usar diferentes conjuntos de regras para 
@@ -60,10 +61,10 @@ function FlexibilityButtonManager() {
                             </Text>
                         </RectButton>
                     </View>
- 
+                </ScrollView>
                 </View>
             </View>
-        </ScrollView>
+       
 
     );
 }

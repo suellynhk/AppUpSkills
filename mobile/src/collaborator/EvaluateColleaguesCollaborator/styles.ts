@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
+        flex: 1,
         marginTop: -40,
         marginBottom: 100,
         padding: 30,
@@ -37,12 +38,14 @@ const styles = StyleSheet.create({
     },
 
     colleaguesImg:{
-        marginBottom: 20,
+        alignSelf: 'center',
+        marginBottom: 40,
         width: 90,
         height: 90
     },
 
     textPendingEvaluation: {
+        alignSelf: 'center',
         marginBottom: 20,
         fontSize: 20,
         fontFamily: 'Rubik_700Bold'

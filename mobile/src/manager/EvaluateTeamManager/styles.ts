@@ -8,13 +8,17 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
+        flex: 1,
         marginTop: -40,
-        marginBottom: 100,
         padding: 30,
         borderRadius: 20,
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center'
+    },
+
+    boxAlign:{
+        width: '100%',
     },
 
     textEvaluation:{
@@ -24,21 +28,19 @@ const styles = StyleSheet.create({
 
     },
 
-    indications:{
-        width: '100%',
+    indications: {
         alignItems: 'center',
         justifyContent: 'center',
     },
 
     names: {
-        alignItems: 'flex-start',
-        marginTop: 20,
         fontSize: 16,
         fontFamily: 'Rubik_500Medium'
     },
 
     teamImg:{
-        marginBottom: 20,
+        alignSelf: 'center',
+        marginBottom: 30,
         width: 100,
         height: 100
     },
@@ -50,8 +52,9 @@ const styles = StyleSheet.create({
     },
 
     buttonsContainer: {
+        height: 50,
+        width: 300,
         marginTop: 20, 
-        width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',

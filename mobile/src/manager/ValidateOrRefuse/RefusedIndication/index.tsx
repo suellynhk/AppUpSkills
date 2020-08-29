@@ -4,7 +4,7 @@ import { View, Text, Image, TextInput } from 'react-native';
 import styles from './styles';
 import PageHeader from '../../../components/PageHeader';
 import { useNavigation } from '@react-navigation/native';
-import { RectButton } from 'react-native-gesture-handler';
+import { RectButton, ScrollView } from 'react-native-gesture-handler';
 
 import refusedIcon from '../../../assets/images/alerta.png';
 
@@ -20,26 +20,31 @@ function RefusedIndication() {
             <PageHeader />
 
             <View style={styles.insideBox}>
-              
+            <ScrollView >
                 <Image source={refusedIcon} style={styles.refusedIcon}/>
                 <Text style={styles.labelText}> Você recusou algumas indicações! </Text> 
                 <Text style={styles.refusedText}>
-                    {"   "}É preciso indicar outra pessoa para avaliar:
+                    {"   "}É preciso indicar outras pessoas no lugar das pessoas 
+                    não validadas para realizar a avaliação de:
                 </Text> 
 
-                <View>
                     <Text style={styles.textLabel}>
-                    Maria:
+                    Joana Costa:
                     </Text>
                     <TextInput style={styles.input} />
-                </View>
+                    <TextInput style={styles.input} />
+                    <TextInput style={styles.input} />
+                    <TextInput style={styles.input} />
+
                 <View style={styles.buttonBox}>
                     <RectButton onPress={handleNavigateToValidatedIndication} style={styles.button} >
                     <Text style={styles.buttonText}> Enviar </Text> 
                     </RectButton>
                 </View>
+            </ScrollView>
             </View>
         </View> 
+        
     )
 
 }

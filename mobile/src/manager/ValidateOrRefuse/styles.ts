@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     insideBox:{ 
         flex: 1,
         marginTop: -40,
+        padding: 25,
         borderRadius: 20,
         backgroundColor: '#FFF',
     },
@@ -32,21 +33,17 @@ const styles = StyleSheet.create({
 
     textValidation:{
         marginTop: 22,
-        marginLeft: 22,
-        marginRight: 22,
         fontSize: 16,
         fontFamily: 'Rubik_400Regular',
         textAlign: 'justify'
     },
 
     switchContainer:{
-        marginLeft: 20,
-        marginRight: 20,
-        width: 370,
+        width: '100%',
     },
 
     name:{
-        marginTop: 30,
+        marginTop: 10,
         marginBottom: 10,
         fontSize: 18,
         color: '#333',
@@ -54,16 +51,22 @@ const styles = StyleSheet.create({
     },
 
     nameIndicated: {
-        fontSize: 18,
-        fontFamily: 'Rubik_400Regular'
+        fontSize: 15,
+        fontFamily: 'Rubik_500Medium'
     },
     
     box: {
         margin: 15,
-        width: 340,
+        width: '100%',
         flexDirection: 'row',
-        alignItems: 'center',
         justifyContent: 'space-between',
+        alignItems: 'flex-end'
+    },
+
+    switchBox: {
+        width: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 
     switches: {

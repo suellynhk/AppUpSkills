@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
+        flex: 1,
         marginTop: -40,
-        marginBottom: 100,
         padding: 30,
         borderRadius: 20,
         backgroundColor: '#FFF',
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     },
 
     colleaguesImg:{
+        alignSelf: 'center',
         marginBottom: 20,
         width: 90,
         height: 90
@@ -49,7 +50,6 @@ const styles = StyleSheet.create({
     },
 
     buttonsContainer: {
-  
         width: '65%',
         flexDirection: 'row',
         justifyContent: 'space-between',

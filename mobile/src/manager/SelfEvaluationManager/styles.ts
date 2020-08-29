@@ -8,15 +8,17 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
+        flex: 1,
         marginTop: -40,
         borderRadius: 20,
+        padding: 30,
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center'
     },
     
     selfIcon: {
-        marginTop: 30,
+        alignSelf: 'center',
         width: 90,
         height: 90
     },
@@ -30,15 +32,11 @@ const styles = StyleSheet.create({
 
     textLabel: {
         marginTop: 20,
-        marginLeft: 20,
-        marginRight: 20,
         fontSize: 20,
         fontFamily: 'Rubik_700Bold'
     },
 
     textEvaluation: {
-        marginRight: 30,
-        marginLeft: 30,
         marginTop: 15,
         fontSize: 16,
         fontFamily: 'Rubik_400Regular',
@@ -46,10 +44,9 @@ const styles = StyleSheet.create({
     },
 
     example: {
-        width: 340,
+        width: '100%',
         flexDirection: 'row',
-        justifyContent: 'flex-start',
-        alignItems: 'center'
+        alignItems: 'center',
     },
 
     textExample: {
@@ -59,14 +56,13 @@ const styles = StyleSheet.create({
     },
 
     buttonContainer: {
-        width: 360,
+        width: '100%',
         alignItems:'flex-end',
         justifyContent: 'flex-end'
     },
 
     button: {
         width: 200,
-        position: 'relative',
         borderRadius: 8,
         marginTop: 25,
         height: 45,

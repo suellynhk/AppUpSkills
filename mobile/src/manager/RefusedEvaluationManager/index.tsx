@@ -16,11 +16,12 @@ function RefusedEvaluationManager() {
     }
 
     return (
-        <ScrollView >
+      
             <View style={styles.container}>
                 <PageHeaderBack />
                 
                 <View style={styles.insideBox}>
+                <ScrollView >
                     <Image source={informationIcon} style={styles.informationIcon}/>
                     <Text style={styles.labelText}> Avaliação de colabores e gestores: </Text> 
                    
@@ -34,9 +35,10 @@ function RefusedEvaluationManager() {
                          <Text style={styles.buttonText}> Enviar </Text> 
                         </RectButton>
                     </View>
+                </ScrollView>  
                 </View>
             </View>
-        </ScrollView>  
+
     );
 }
 export default RefusedEvaluationManager;

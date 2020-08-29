@@ -16,12 +16,12 @@ function IndicateSomeoneCollaborator() {
    
     return (
        
-        <ScrollView > 
+       
             <View style={styles.container}>
             <PageHeaderBack />
                     <View style={styles.indication}> 
-
-                        <View style={styles.center}>
+                    <ScrollView > 
+                    <View style={styles.center}>
                             <Image source={colleaguesIcon} style={styles.colleaguesIcon}/>
                             <Text style={styles.textHeader}>
                             Indique 4 colaboradores que possam te avaliar
@@ -56,10 +56,11 @@ function IndicateSomeoneCollaborator() {
                             <RectButton style={styles.submitButton} onPress={handleToCompletedIndicationCollaborator}>  
                             <Text style={styles.submitButtonText}> Enviar </Text>
                             </RectButton>
-                        </View>            
+                        </View>   
+                    </ScrollView>         
                     </View>            
             </View>
-        </ScrollView>
+       
     );
 }
 

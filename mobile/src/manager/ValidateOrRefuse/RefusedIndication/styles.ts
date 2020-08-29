@@ -8,8 +8,10 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
+        flex: 1,
         marginTop: -40,
         borderRadius: 20,
+        padding: 35,
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center'
@@ -17,34 +19,35 @@ const styles = StyleSheet.create({
 
     labelText: {
         marginTop: 20,
-        fontSize: 18,
-        fontFamily: 'Rubik_700Bold'
+        fontSize: 17,
+        fontFamily: 'Rubik_700Bold',
+        textAlign: 'center'
     },
 
     refusedText:{
-        margin: 15,
+        marginTop: 20,
         fontSize: 16,
         fontFamily: 'Rubik_400Regular',
         textAlign: "justify"
     },
 
     refusedIcon: {
-        marginTop: 30,
+        alignSelf: 'center',
         width: 90,
         height: 90
     },
 
     textLabel: {
         fontSize: 16,
-        marginTop: 15,
-        marginBottom: 5,
-        fontFamily: 'Rubik_400Regular',
+        marginTop: 20,
+        fontFamily: 'Rubik_500Medium',
+
     },
 
     input: {
-        paddingLeft: 10,
-        width: 340,
+        width: '100%',
         height: 40,
+        marginTop: 30,
         borderRadius: 8,
         borderWidth: 1,
         borderColor: '#4949E7',
@@ -52,13 +55,14 @@ const styles = StyleSheet.create({
     },
 
     buttonBox: {
-        width: 340,
+        width: '100%',
         alignItems: 'flex-end',
         justifyContent: 'flex-end',
     },
 
     button: {
-        marginTop: 40,
+        marginTop: 35,
+        marginBottom: 40,
         width: 150,
         height: 45,
         backgroundColor: '#4949E7',

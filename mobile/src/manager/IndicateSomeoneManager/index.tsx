@@ -16,19 +16,16 @@ function IndicateSomeoneManager() {
    
     return (
        
-        <ScrollView > 
             <View style={styles.container}>
             <PageHeaderBack />
                     <View style={styles.indication}> 
-
+                    <ScrollView > 
                         <View style={styles.center}>
                             <Image source={colleaguesIcon} style={styles.colleaguesIcon}/>
                             <Text style={styles.textHeader}>
-                            Indique 4 colaboradores que possam te avaliar
+                            Indique 4 colaboradores que possam te avaliar:
                             </Text>
-                            <Text style={styles.indicationText}>
-                            Converse com seu gestor referente as suas indicações!
-                            </Text>
+                           
                         </View>
                         <View>
                             <Text style={styles.textLabel}>
@@ -56,10 +53,11 @@ function IndicateSomeoneManager() {
                             <RectButton style={styles.submitButton} onPress={handleToCompletedIndicationManager}>  
                             <Text style={styles.submitButtonText}> Enviar </Text>
                             </RectButton>
-                        </View>            
+                        </View> 
+                    </ScrollView>           
                     </View>            
             </View>
-        </ScrollView>
+    
     );
 }
 

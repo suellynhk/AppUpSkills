@@ -41,7 +41,6 @@ import RefusedEvaluationCollaborator from '../collaborator/RefusedEvaluationColl
 import EvaluateColleaguesCollaborator from '../collaborator/EvaluateColleaguesCollaborator';
 import EvaluateIndicationsCollaborator from '../SkillsScreenButtons/EvaluateIndicationsCollaborator';
 import EvaluateIndicationsManager from '../SkillsScreenButtons/EvaluateIndicationsManager';
-import SkillsScreenManagers from '../manager/SkillsScreenCheckbox';
 import ComplexProblemsButtonManager from '../SkillsScreenButtons/QuestionsButtonsManager/ComplexProblemsButtonManager';
 import EmotionalIntelligenceButtonManager from '../SkillsScreenButtons/QuestionsButtonsManager/EmotionalIntelligenceButtonManager';
 import FlexibilityButtonManager from '../SkillsScreenButtons/QuestionsButtonsManager/FlexibilityButtonManager';
@@ -92,7 +91,6 @@ function AppStack() {
                 <Screen name="DashboardManager" component={DashboardManager} />
                 <Screen name="EvaluateColleaguesManager" component={EvaluateColleaguesManager} />
                 <Screen name="RefusedEvaluationManager" component={RefusedEvaluationManager} />
-                <Screen name="SkillsScreenManagers" component={SkillsScreenManagers} />
                 <Screen name="EvaluateTeamManager" component={EvaluateTeamManager} />
 
                 <Screen name="FlexibilityManager" component={FlexibilityManager} />

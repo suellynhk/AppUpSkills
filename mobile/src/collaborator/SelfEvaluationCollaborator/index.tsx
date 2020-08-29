@@ -22,10 +22,11 @@ function SelfEvaluationCollaborator() {
     return (
        
         <View style={styles.container}>
-             <ScrollView>
+            
             <PageHeaderBack />
               
             <View style={styles.insideBox}>
+            <ScrollView>
                 <Image source={selfIcon} style={styles.selfIcon}/>
                 <Text style={styles.textLabel}>
                   Autoavaliação das Soft Skills:
@@ -60,7 +61,6 @@ function SelfEvaluationCollaborator() {
                     <Text style={styles.textExample}>Deu ruim (nunca)</Text>
                 </View>  
 
-
                 <View style= {styles.buttonContainer}>
                     <RectButton onPress={handleNavigateToFlexibilityCollaborator} style={styles.button}>
                         <Text style={styles.textButton}>
@@ -68,8 +68,8 @@ function SelfEvaluationCollaborator() {
                         </Text>
                     </RectButton>
                 </View> 
+                </ScrollView>
             </View>
-            </ScrollView>
         </View>
       
     );

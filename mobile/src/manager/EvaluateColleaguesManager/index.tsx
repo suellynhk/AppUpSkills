@@ -27,11 +27,12 @@ function EvaluateColleaguesManager() {
 
   
     return (
-        <ScrollView >
+       
             <View style={styles.container}>
                 <PageHeaderBack />
                 
                 <View style={styles.insideBox}>
+                <ScrollView >
                     <Image source={colleaguesImg} style={styles.colleaguesImg}/>
 
                     <Text style={styles.textPendingEvaluation}>
@@ -91,10 +92,10 @@ function EvaluateColleaguesManager() {
                             </RectButton>
                         </View>
                     </View>
-
+                </ScrollView>  
                 </View>    
             </View>
-        </ScrollView>  
+       
     );
 }
 export default EvaluateColleaguesManager;

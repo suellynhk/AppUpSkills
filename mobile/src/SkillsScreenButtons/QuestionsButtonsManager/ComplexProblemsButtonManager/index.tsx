@@ -20,11 +20,12 @@ function ComplexProblemsButtonManager() {
     } 
 
     return (
-        <ScrollView>
+        
             <View style={styles.container}>
             
                 <PageHeader />
                 <View style={styles.insideBox}>
+                <ScrollView>
                         <Text style={styles.titleText}> Resolução de Problemas Complexos </Text>
                         <Text style={styles.descriptionText}>
                         {'  '}Capacidade de percepção adequada dos problemas e de criação 
@@ -60,10 +61,9 @@ function ComplexProblemsButtonManager() {
                             </Text>
                         </RectButton>
                     </View>
- 
+                </ScrollView>
                 </View>
             </View>
-        </ScrollView>
 
     );
 }

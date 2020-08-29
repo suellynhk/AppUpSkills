@@ -22,15 +22,16 @@ function EvaluateColleaguesCollaborator() {
 
   
     return (
-        <ScrollView  contentContainerStyle={styles.container}>
+      
             <View style={styles.container}>
                 <PageHeaderBack />
                 
                 <View style={styles.insideBox}>
+                <ScrollView>
                     <Image source={colleaguesImg} style={styles.colleaguesImg}/>
 
                     <Text style={styles.textPendingEvaluation}>
-                    Avaliação de colabores e gestores:
+                    Avaliação de colabores:
                     </Text>
 
                     <Text style={styles.textEvaluation}>
@@ -70,10 +71,10 @@ function EvaluateColleaguesCollaborator() {
                             </RectButton>
                         </View>
                     </View>
-
+                </ScrollView>  
                 </View>    
             </View>
-        </ScrollView>  
+       
     );
 }
 export default EvaluateColleaguesCollaborator;

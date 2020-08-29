@@ -22,12 +22,13 @@ function JudgmentDecisionMakingManager() {
     };
 
     return (
-        <ScrollView>
+       
             <View style={styles.container}>
             
                 <PageHeader />
                 <View style={styles.insideBox}>
-                        <Text style={styles.titleText}> Julgamento e Tomada de Decisão  </Text>
+                <ScrollView>
+                        <Text style={styles.titleText}>Julgamento e Tomada de Decisão  </Text>
                         <Text style={styles.descriptionText}>
                         {'  '}Capacidade de analisar dados (em diferentes níveis 
                         de complexidade) em ambientes de alta complexidade tomando decisões assertivas.
@@ -56,10 +57,9 @@ function JudgmentDecisionMakingManager() {
                             <Image source={rightIcon} style={styles.rightButtonImg}/>
                         </BorderlessButton>
                     </View>
- 
+                </ScrollView>
                 </View>
             </View>
-        </ScrollView>
 
     );
 }

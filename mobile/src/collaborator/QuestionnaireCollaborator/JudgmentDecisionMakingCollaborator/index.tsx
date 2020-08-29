@@ -18,18 +18,19 @@ function JudgmentDecisionMakingCollaborator
         navigate('EmotionalIntelligenceCollaborator');
      }; 
 
-    function handleNavigateToFeedbackCollaborator() {      
-       navigate('FeedbackCollaborator');
+    function handleNavigateToCompletedQuestionnaireCollaborator() {      
+       navigate('CompletedQuestionnaireCollaborator');
     };
  
 
     return (
-        <ScrollView>
+        
             <View style={styles.container}>
             
                 <PageHeader />
                 <View style={styles.insideBox}>
-                        <Text style={styles.titleText}> Julgamento e Tomada de Decisão  </Text>
+                <ScrollView>
+                        <Text style={styles.titleText}>Julgamento e Tomada de Decisão  </Text>
                         <Text style={styles.descriptionText}>
                         {'  '}Capacidade de analisar dados (em diferentes níveis 
                         de complexidade) em ambientes de alta complexidade tomando decisões assertivas.
@@ -55,15 +56,15 @@ function JudgmentDecisionMakingCollaborator
                             <Image source={leftIcon} style={styles.buttonImg}/>
                         </BorderlessButton>
 
-                        <RectButton onPress={handleNavigateToFeedbackCollaborator} style={styles.recButton}>
+                        <RectButton onPress={handleNavigateToCompletedQuestionnaireCollaborator} style={styles.recButton}>
                            <Text style={styles.textButton}>Finalizar</Text>
                         </RectButton>
                     </View>
  
- 
+                </ScrollView>
                 </View>
             </View>
-        </ScrollView>
+       
 
     );
 }

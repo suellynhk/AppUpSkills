@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { useState } from 'react';
 import { Text, View, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RectButton, ScrollView, Switch } from 'react-native-gesture-handler';
@@ -8,54 +8,39 @@ import styles from './styles';
 
 import validationImg from '../../assets/images/icons/validation.png';
 
-interface PessoaIndicada{
-    id: number,
-    nome: string,
-    indicada: boolean
-}
 
-function ValidateOrRefuse() {
+const ValidateOrRefuse = () => {
 
     const [isEnabled, setIsEnabled] = useState(false);
+    const [isEnabled1, setIsEnabled1] = useState(false);
+    const [isEnabled2, setIsEnabled2] = useState(false);
+    const [isEnabled3, setIsEnabled3] = useState(false);
+  
+    const toggleSwitch = () => {  
+        setIsEnabled(previousState => !previousState)
+    }
+        
 
-
-    const [pessoasSelecionadas, setPessoasSelecionadas] = useState(new Array<PessoaIndicada>());
-
-    setPessoasSelecionadas([
-        {
-            id: 1,
-            nome: 'José',
-            indicada: false
-        },
-        {
-            id: 2,
-            nome: 'João',
-            indicada: false
-        },
-        {
-            id: 3,
-            nome: 'Maria',
-            indicada: false
-        }
-    ]);
-
-    const toggleSwitch = (pessoaId: number) => {
-        let pessoas = [...pessoasSelecionadas];
-        setPessoasSelecionadas(
-            pessoasSelecionadas.map((el) => {
-                if (el.id === pessoaId) {
-                    el.indicada = !el.indicada;
-                    return el;
-                }
-                return el;
-            })
-          );
+    const toggleSwitch1 = () => {
+        setIsEnabled1(previousState1 => !previousState1)
     }
 
+    const toggleSwitch2 = () => {
+        setIsEnabled2(previousState2 => !previousState2)
+    }
+
+    const toggleSwitch3 = () => {
+        setIsEnabled3(previousState3 => !previousState3)
+    }
 
     const { navigate } = useNavigation();
-    function handleNavigateToValidatedIndication() {
-        navigate('ValidatedIndication');
+
+    const validationButton = () => {
+        if (isEnabled && isEnabled1 && isEnabled2 && isEnabled3) {
+            navigate('ValidatedIndication');
+        }else {
+            navigate('RefusedIndication');
+        }
     }
 
     return (
@@ -74,32 +59,13 @@ function ValidateOrRefuse() {
                         indicou para avaliá-lo.{'\n'}
                         </Text>
                     </View>
-
                     <View style= {styles.switchContainer}>
+                    <Text style={styles.name}>Joana indicou:</Text> 
 
-                        {pessoasSelecionadas.map((pessoa: PessoaIndicada) => {
-                            return (
-                            <View key={pessoa.id}>
-                                <Text key={pessoa.id} style={styles.name}>{pessoa.nome} indicou:</Text>
-                                <View key={pessoa.id} style= {styles.box}>
-                                    <Text key={pessoa.id} style={styles.nameIndicated}>Pessoa Indicada</Text>
-                                    <Text  key={pessoa.id}>{!pessoa.indicada ? ' ' : 'Validar'}</Text>
-                                    <Switch 
-                                        key={pessoa.id}
-                                        style={styles.switches}
-                                        trackColor={{ false: "#767577", true: "#81b0ff" }}
-                                        thumbColor={!pessoa.indicada ? "#3e3e3e" : "#4949E7"}
-                                        ios_backgroundColor="#3e3e3e"
-                                        // onValueChange={() => toggleSwitch(pessoa.id)}
-                                        value={pessoa.indicada}
-                                    />
-                                </View>
-                            </View>
-                        )})}
-{/*                         
                         <View style= {styles.box}>
-                            <Text style={styles.nameIndicated}>Pessoa Indicada</Text>
-                            <Text >{!isEnabled ? ' ' : 'Validar'}</Text>
+                            <Text style={styles.nameIndicated}>Diogo Nascimento</Text>
+                            <View style= {styles.switchBox}>
+                            <Text >{!isEnabled? ' ' : 'Validar'}</Text>
                             <Switch 
                                 style={styles.switches}
                                 trackColor={{ false: "#767577", true: "#81b0ff" }}
@@ -108,80 +74,57 @@ function ValidateOrRefuse() {
                                 onValueChange={toggleSwitch}
                                 value={isEnabled}
                             />
+                            </View>
                         </View> 
                         <View style= {styles.box}>
-                            <Text style={styles.nameIndicated}>Pessoa Indicada</Text>
-                            <Text >{!isEnabled ? ' ' : 'Validar'}</Text>
+                            <Text style={styles.nameIndicated}>Eduardo Lima</Text>
+                            <View style= {styles.switchBox}>
+                            <Text >{!isEnabled1 ? ' ' : 'Validar'}</Text>
                             <Switch 
                                 style={styles.switches}
                                 trackColor={{ false: "#767577", true: "#81b0ff" }}
-                                thumbColor={!isEnabled ? "#3e3e3e" : "#4949E7"}
+                                thumbColor={!isEnabled1 ? "#3e3e3e" : "#4949E7"}
                                 ios_backgroundColor="#3e3e3e"
-                                onValueChange={toggleSwitch}
-                                value={isEnabled}
+                                onValueChange={toggleSwitch1}
+                                value={isEnabled1}
                             />
-                        </View>
-                    
-                        <Text style={styles.name}>Maria indicou:</Text>      
+                            </View>
+                        </View> 
                         <View style= {styles.box}>
-                            <Text style={styles.nameIndicated}>Pessoa Indicada</Text>
-                            <Text >{!isEnabled ? ' ' : 'Validar'}</Text>
+                            <Text style={styles.nameIndicated}>Ana Rodrigues</Text>
+                            <View style= {styles.switchBox}>
+                            <Text >{!isEnabled2 ? ' ' : 'Validar'}</Text>
                             <Switch 
                                 style={styles.switches}
                                 trackColor={{ false: "#767577", true: "#81b0ff" }}
-                                thumbColor={!isEnabled ? "#3e3e3e" : "#4949E7"}
+                                thumbColor={!isEnabled2 ? "#3e3e3e" : "#4949E7"}
                                 ios_backgroundColor="#3e3e3e"
-                                onValueChange={toggleSwitch}
-                                value={isEnabled}  
+                                onValueChange={toggleSwitch2}
+                                value={isEnabled2}
                             />
-                        </View>                         
-                        <View style= {styles.box}>
-                            <Text style={styles.nameIndicated}>Pessoa Indicada</Text>
-                            <Text >{!isEnabled ? ' ' : 'Validar'}</Text>
-                            <Switch 
-                                style={styles.switches}
-                                trackColor={{ false: "#767577", true: "#81b0ff" }}
-                                thumbColor={!isEnabled ? "#3e3e3e" : "#4949E7"}
-                                ios_backgroundColor="#3e3e3e"
-                                onValueChange={toggleSwitch}
-                                value={isEnabled}
-                            />
-                        </View>
-
-                        <Text style={styles.name}>José indicou:</Text>       
-                        <View style= {styles.box}>
-                            <Text style={styles.nameIndicated}>Pessoa Indicada</Text>
-                            <Text >{!isEnabled ? ' ' : 'Validar'}</Text>
-                            <Switch 
-                                style={styles.switches}
-                                trackColor={{ false: "#767577", true: "#81b0ff" }}
-                                thumbColor={!isEnabled ? "#3e3e3e" : "#4949E7"}
-                                ios_backgroundColor="#3e3e3e"
-                                onValueChange={toggleSwitch}
-                                value={isEnabled}
-                            />
+                            </View>
                         </View>
                         <View style= {styles.box}>
-                            <Text style={styles.nameIndicated}>Pessoa Indicada</Text>
-                            <Text >{!isEnabled ? ' ' : 'Validar'}</Text>
+                            <Text style={styles.nameIndicated}>Camila Araújo</Text>
+                            <View style= {styles.switchBox}>
+                            <Text >{!isEnabled3 ? ' ' : 'Validar'}</Text>
                             <Switch 
                                 style={styles.switches}
                                 trackColor={{ false: "#767577", true: "#81b0ff" }}
-                                thumbColor={!isEnabled ? "#3e3e3e" : "#4949E7"}
+                                thumbColor={!isEnabled3 ? "#3e3e3e" : "#4949E7"}
                                 ios_backgroundColor="#3e3e3e"
-                                onValueChange={toggleSwitch}
-                                value={isEnabled}
+                                onValueChange={toggleSwitch3}
+                                value={isEnabled3}  
                             />
-                        </View>
-                                  */}
+                            </View>
+                        </View>                                   
                         <View style={styles.buttonsContainer}>
-                            <RectButton onPress={handleNavigateToValidatedIndication} style={styles.button}>
+                            <RectButton onPress={validationButton} style={styles.button}>
                                 <Text style={styles.textButton}>
                                     Enviar
                                 </Text>
                             </RectButton>
                         </View>
-
                     </View>
                 </ScrollView>  
             </View> 

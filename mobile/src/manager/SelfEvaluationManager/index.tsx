@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { RectButton } from 'react-native-gesture-handler';
+import { RectButton, ScrollView } from 'react-native-gesture-handler';
 
 import styles from './styles';
 import PageHeaderBack from '../../components/PageHeaderBack';
@@ -22,8 +22,9 @@ function SelfEvaluationManager() {
     return (
         <View style={styles.container}>
             <PageHeaderBack />
-              
+           
             <View style={styles.insideBox}>
+            <ScrollView>
                 <Image source={selfIcon} style={styles.selfIcon}/>
                 <Text style={styles.textLabel}>
                   Autoavaliação das Soft Skills:
@@ -58,7 +59,6 @@ function SelfEvaluationManager() {
                     <Text style={styles.textExample}>Deu ruim (nunca)</Text>
                 </View>  
 
-
                 <View style= {styles.buttonContainer}>
                     <RectButton onPress={handleNavigateToFlexibilityManager} style={styles.button}>
                         <Text style={styles.textButton}>
@@ -66,6 +66,7 @@ function SelfEvaluationManager() {
                         </Text>
                     </RectButton>
                 </View> 
+            </ScrollView>
             </View>
         </View>
     );

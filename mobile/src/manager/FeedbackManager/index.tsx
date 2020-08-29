@@ -16,11 +16,12 @@ function FeedbackManager() {
     }
 
     return (
-        <ScrollView >
+      
             <View style={styles.container}>
                 <PageHeader />
-
+                
                 <View style={styles.insideBox}>
+                <ScrollView >
                     <Text style={styles.labelText}> Já estamos acabando... </Text> 
                     <Image source={feedbackIcon} style={styles.feedbackIcon}/>
                     <Text style={styles.confirmationText}>
@@ -33,9 +34,10 @@ function FeedbackManager() {
                          <Text style={styles.buttonText}> Enviar </Text> 
                         </RectButton>
                     </View>
+                </ScrollView>
                 </View>
             </View>
-        </ScrollView>
+       
     )
 
 }

@@ -14,19 +14,20 @@ function PeopleManagement() {
     const { navigate } = useNavigation();
 
     function handleNavigateToJudgmentDecisionMaking() {      
-        navigate('JudgmentDecisionMaking');
+        navigate('JudgmentDecisionMakingManager');
      }; 
     
-    function handleNavigateToFeedbackManager() {      
-       navigate('FeedbackManager');
+    function handleNavigateToCompletedQuestionnaireManager() {      
+       navigate('CompletedQuestionnaireManager');
     };
     
     return (
-        <ScrollView>
+       
             <View style={styles.container}>
             
                 <PageHeader />
                 <View style={styles.insideBox}>
+                <ScrollView>
                         <Text style={styles.titleText}> Liderança  </Text>
                         <Text style={styles.descriptionText}>
                         {'  '}Capacidade de motivar e influenciar as 
@@ -52,14 +53,13 @@ function PeopleManagement() {
                             <Image source={leftIcon} style={styles.buttonImg}/>
                         </BorderlessButton>
 
-                        <RectButton onPress={handleNavigateToFeedbackManager} style={styles.recButton}>
+                        <RectButton onPress={handleNavigateToCompletedQuestionnaireManager} style={styles.recButton}>
                            <Text style={styles.textButton}>Finalizar</Text>
                         </RectButton>
                     </View>
- 
+                </ScrollView>
                 </View>
             </View>
-        </ScrollView>
 
     );
 }

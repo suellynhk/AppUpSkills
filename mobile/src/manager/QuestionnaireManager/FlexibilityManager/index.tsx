@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { BorderlessButton, ScrollView } from 'react-native-gesture-handler';
 import RadioButtonComponent from '../../../components/RadioButtons';
-import leftIcon from '../../../assets/images/icons/left.png';
 import rightIcon from '../../../assets/images/icons/right.png';
 import PageHeader from '../../../components/PageHeader';
 
@@ -17,11 +16,12 @@ function FlexibilityManager() {
     } 
 
     return (
-        <ScrollView>
+      
             <View style={styles.container}>
             
                 <PageHeader />
                 <View style={styles.insideBox}>
+                <ScrollView>
                         <Text style={styles.titleText}> Flexibilidade</Text>
                         <Text style={styles.descriptionText}>
                         {'  '}Capacidade de criar ou usar diferentes conjuntos de regras para 
@@ -49,10 +49,10 @@ function FlexibilityManager() {
                             <Image source={rightIcon} style={styles.rightButtonImg}/>
                         </BorderlessButton>
                     </View>
- 
+                   </ScrollView>
                 </View>
             </View>
-        </ScrollView>
+
 
     );
 }

@@ -7,20 +7,21 @@ import dashboardIcon from '../../assets/images/icons/dashboard.png';
 import styles from './styles';
 import Carrossel from '../../components/Carrossel';
 
+
 function DashboardManager() {
     return (
-        <ScrollView>
             <View style={styles.container}>
                 <PageHeaderBack/>
                
                 <View style={styles.insideBox}>
+                <ScrollView>
                     <Image  source={dashboardIcon} style={styles.dashboardIcon}/>
                     <Text style={styles.labelText}> Dashboard </Text>
-            
+                  
+                </ScrollView>
                 </View>
-
             </View>
-        </ScrollView>
+
     );
 }
 

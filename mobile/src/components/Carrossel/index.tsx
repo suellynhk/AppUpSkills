@@ -3,10 +3,12 @@ import { Text, View,  Image } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import styles from './styles';
 
-interface CarouselItem{
+interface CarouselItem {
+  key: any,
+  index: any,
   title: string,
   image: string
-};
+}
 
 const Carrossel: React.FC<CarouselItem> = ({ title, image }) => {
   const carouselItems = [
@@ -33,10 +35,10 @@ const Carrossel: React.FC<CarouselItem> = ({ title, image }) => {
     {
       title: 'Gestão de pessoas',
       image: 'https://www.socialdub.com/groupspictures/44278/442782469530031392695.jpg?x2',
-    },
-  ];
+    }
+  ]
 
-  function renderItem({item, index} : any) {
+  function renderItem({item, index}:any) {
     return(
       <View style={styles.carouselItemContainer}>(
                 <Text key={index} style={styles.title}>{item.title}</Text>
@@ -55,7 +57,7 @@ const Carrossel: React.FC<CarouselItem> = ({ title, image }) => {
         sliderWidth={300}
         itemWidth={300}
         loop={true}
-        layoutCardOffset={18}
+        layoutCardOffset={50}
         snapToAlignment={"center"}
         renderItem={renderItem}
       />

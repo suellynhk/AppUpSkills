@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{ 
+        flex: 1,
         marginTop: -40,
         padding: 30,
         borderRadius: 20,
@@ -18,6 +19,8 @@ const styles = StyleSheet.create({
     },
 
     labelText: {
+        marginTop: 30,
+        alignSelf: "center",
         fontSize: 20,
         fontFamily: 'Rubik_700Bold'
     },
@@ -29,6 +32,7 @@ const styles = StyleSheet.create({
     },
 
     feedbackIcon: {
+        alignSelf: 'center',
         marginTop: 40,
         marginBottom: 40,
         width: 70,

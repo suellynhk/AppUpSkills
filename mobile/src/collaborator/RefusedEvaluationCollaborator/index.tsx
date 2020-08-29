@@ -16,13 +16,14 @@ function RefusedEvaluationCollaborator() {
     }
 
     return (
-        <ScrollView >
+       
             <View style={styles.container}>
                 <PageHeaderBack />
                 
                 <View style={styles.insideBox}>
+                <ScrollView >
                     <Image source={informationIcon} style={styles.informationIcon}/>
-                    <Text style={styles.labelText}> Avaliação de colabores e gestores: </Text> 
+                    <Text style={styles.labelText}> Avaliação de colabores: </Text> 
                    
                     <Text style={styles.confirmationText}>
                         Descreva o motivo pelo qual deseja não realizar a avaliação:
@@ -34,9 +35,10 @@ function RefusedEvaluationCollaborator() {
                          <Text style={styles.buttonText}> Enviar </Text> 
                         </RectButton>
                     </View>
+                </ScrollView>  
                 </View>
             </View>
-        </ScrollView>  
+       
     );
 }
 export default RefusedEvaluationCollaborator;

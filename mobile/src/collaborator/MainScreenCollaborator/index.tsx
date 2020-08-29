@@ -54,7 +54,7 @@ function MainScreenCollaborator
 
                     <RectButton onPress={handleNavigateToDashboardCollaborator}style={styles.buttons}>
                         <Text style={styles.textButton}>
-                            Dashboard e Microlearning
+                            Dashboard
                         </Text>
                     </RectButton>
 

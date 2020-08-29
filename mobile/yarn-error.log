@@ -1,5 +1,5 @@
 Arguments: 
-  /home/suellyn/.nvm/versions/node/v12.18.3/bin/node /usr/share/yarn/bin/yarn.js add @types/react-hook-carousel
+  /home/suellyn/.nvm/versions/node/v12.18.3/bin/node /usr/share/yarn/bin/yarn.js add @types/simple-carousel-react-native
 
 PATH: 
   /home/suellyn/.nvm/versions/node/v12.18.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/suellyn/.dotnet/tools:/home/suellyn/.dotnet/tools
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2freact-hook-carousel: Not found
+  Error: https://registry.yarnpkg.com/@types%2fsimple-carousel-react-native: Not found
       at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66987:18)
       at Request.self.callback (/usr/share/yarn/lib/cli.js:140748:22)
       at Request.emit (events.js:315:20)
@@ -68,7 +68,8 @@ npm manifest:
       "react-native-simple-radio-button": "^2.7.4",
       "react-native-snap-carousel": "^4.0.0-beta.5",
       "react-native-video": "^5.1.0-alpha7",
-      "react-native-web": "~0.11.7"
+      "react-native-web": "~0.11.7",
+      "simple-carousel-react-native": "^1.0.2"
     },
     "devDependencies": {
       "@babel/core": "^7.8.6",
@@ -5439,6 +5440,11 @@ Lockfile:
     version "3.0.3"
     resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
     integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
+  
+  simple-carousel-react-native@^1.0.2:
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/simple-carousel-react-native/-/simple-carousel-react-native-1.0.2.tgz#840cf62a0de7412e9e15ea515c10f428208d6df9"
+    integrity sha512-V8rDPRGC2rpJvc0IsHQhVUcgx+GyeQ/r6KdYd5NtkOU5QUUzBK0K/Bp0JtSGGhqajIiQWzFiBWmgPdmTY9pIGw==
   
   simple-plist@^1.0.0, simple-plist@^1.1.0:
     version "1.1.0"

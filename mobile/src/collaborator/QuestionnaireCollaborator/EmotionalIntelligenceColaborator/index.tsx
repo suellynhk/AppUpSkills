@@ -23,11 +23,12 @@ function EmotionalIntelligenceCollaborator() {
     } 
 
     return (
-        <ScrollView>
+       
             <View style={styles.container}>
             
                 <PageHeader />
                 <View style={styles.insideBox}>
+                <ScrollView>
                         <Text style={styles.titleText}> Inteligência Emocional </Text>
                         <Text style={styles.descriptionText}>
                         {'  '}Capacidade de reconhecer e avaliar os seus próprios sentimentos 
@@ -59,10 +60,10 @@ function EmotionalIntelligenceCollaborator() {
                             <Image source={rightIcon} style={styles.rightButtonImg}/>
                         </BorderlessButton>
                     </View>
- 
+                </ScrollView>
                 </View>
             </View>
-        </ScrollView>
+      
 
     );
 }

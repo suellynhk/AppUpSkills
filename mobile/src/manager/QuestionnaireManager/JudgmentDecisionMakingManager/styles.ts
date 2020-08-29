@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
-        padding: 25,
+        flex: 1,
+        padding: 30,
         marginTop: -40,
         borderRadius: 20,
         backgroundColor: '#FFF',
@@ -37,14 +38,6 @@ const styles = StyleSheet.create({
     },
 
 
-    button: {
-        marginTop: 50,
-        width: 50,
-        height: 50,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-
     bottomButton: {
         width: '100%',
         padding: 20,
@@ -52,15 +45,23 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
 
-    buttonImg:{ 
-        height: 50,
+    button: {
+        marginTop: 50,
         width: 50,
-        },
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
 
     rightButtonImg:{
         width: 50,
         height: 50,
     },
+
+    buttonImg: {
+        width: 50,
+        height: 50,
+    }
 
 });
 

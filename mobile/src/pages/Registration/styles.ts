@@ -8,8 +8,9 @@ const styles = StyleSheet.create({
     },
 
     formCreateAccount:{
+        flex: 1,
         marginTop: -40,
-        padding: 30,
+        padding: 35,
         borderRadius: 20,
         backgroundColor: '#FFF',
     },

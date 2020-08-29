@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
-        padding: 25,
+        flex: 1,
+        padding: 30,
         marginTop: -40,
         borderRadius: 20,
         backgroundColor: '#FFF',

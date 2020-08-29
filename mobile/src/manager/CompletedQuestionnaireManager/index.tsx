@@ -18,11 +18,12 @@ function CompletedQuestionnaireManager() {
     }
 
     return (
-        <ScrollView >
+        
         <View style={styles.container}>
             <PageHeader />
 
             <View style={styles.insideBox}>
+            <ScrollView >
                 <Text style={styles.labelText}> Uhuuuu! </Text> 
                 <Image source={answeredIcon} style={styles.confirmationIcon}/>
                 <Text style={styles.labelText}> Avaliação finalizada! </Text> 
@@ -37,9 +38,10 @@ function CompletedQuestionnaireManager() {
                 <RectButton onPress={handleNavigateToMainPageManager} style={styles.secondButton} >
                   <Text style={styles.buttonText}> Retornar ao menu principal </Text> 
                 </RectButton>
+            </ScrollView>
             </View>
         </View>
-        </ScrollView>
+    
     )
 
 }

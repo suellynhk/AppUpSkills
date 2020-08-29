@@ -20,11 +20,12 @@ function JudgmentButtonManager2() {
     } 
 
     return (
-        <ScrollView>
+       
             <View style={styles.container}>
             
                 <PageHeader />
                 <View style={styles.insideBox}>
+                <ScrollView>
                 <Text style={styles.titleText}> Julgamento e Tomada de Decisão  </Text>
                         <Text style={styles.descriptionText}>
                         {'  '}Capacidade de analisar dados (em diferentes níveis 
@@ -58,10 +59,10 @@ function JudgmentButtonManager2() {
                             </Text>
                         </RectButton>
                     </View>
- 
+                </ScrollView>
                 </View>
             </View>
-        </ScrollView>
+      
 
     );
 }

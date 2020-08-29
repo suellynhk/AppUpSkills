@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{ 
+        flex: 1,
         marginTop: -40,
         padding: 25,
         borderRadius: 20,
@@ -18,6 +19,7 @@ const styles = StyleSheet.create({
     },
 
     labelText: {
+        alignSelf:'center',
         marginTop: 20,
         marginBottom: 20,
         fontSize: 20,
@@ -32,6 +34,7 @@ const styles = StyleSheet.create({
     },
 
     confirmationIcon: {
+        alignSelf:'center',
         marginTop: 20,
         marginBottom: 20,
         width: 90,
@@ -39,6 +42,7 @@ const styles = StyleSheet.create({
     },
 
     button: {
+        alignSelf:'center',
         marginTop: 30,
         width: 270,
         height: 45,
@@ -49,6 +53,7 @@ const styles = StyleSheet.create({
     },
 
     secondButton:{
+        alignSelf:'center',
         marginTop: 25,
         width: 270,
         height: 45,

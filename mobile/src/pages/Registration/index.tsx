@@ -16,11 +16,12 @@ function Registration() {
     }
 
     return(
-        <ScrollView> 
+       
             <View style={styles.container}>
         
                 <PageHeaderBack />
                 <View style={styles.formCreateAccount}> 
+                <ScrollView> 
                     <View style={styles.center}>
                         <Image source={registrationIcon} style={styles.registrationIcon}/>
                         <Text style={styles.textHeader}>
@@ -70,10 +71,10 @@ function Registration() {
                         </RectButton>
                     </View>
 
-
+            </ScrollView>
             </View>
         </View>
-    </ScrollView>
+   
     )
 }
 

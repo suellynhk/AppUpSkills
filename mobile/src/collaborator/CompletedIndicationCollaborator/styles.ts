@@ -8,18 +8,20 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{ 
+        flex: 1,
         marginTop: -40,
-        padding: 25,
+        padding: 30,
         borderRadius: 20,
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: 740,
     },
 
     labelText: {
+        marginTop: 40,
         fontSize: 20,
-        fontFamily: 'Rubik_700Bold'
+        fontFamily: 'Rubik_700Bold',
+        alignSelf: 'center'
     },
 
     confirmationText:{
@@ -30,6 +32,7 @@ const styles = StyleSheet.create({
     },
 
     confirmationIcon: {
+        alignSelf: 'center',
         marginTop: 50,
         marginBottom: 40,
         width: 100,
@@ -37,6 +40,7 @@ const styles = StyleSheet.create({
     },
 
     button: {
+        alignSelf: 'center',
         marginTop: 30,
         width: 270,
         height: 45,

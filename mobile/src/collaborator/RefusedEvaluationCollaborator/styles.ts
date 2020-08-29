@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{ 
+        flex: 1,
         marginTop: -40,
         padding: 30,
         borderRadius: 20,
@@ -18,6 +19,7 @@ const styles = StyleSheet.create({
     },
 
     labelText: {
+        alignSelf: 'center',
         marginBottom: 30,
         fontSize: 20,
         fontFamily: 'Rubik_700Bold',
@@ -30,6 +32,7 @@ const styles = StyleSheet.create({
     },
 
     informationIcon: {
+        alignSelf: 'center',
         marginBottom: 40,
         width: 90,
         height: 90

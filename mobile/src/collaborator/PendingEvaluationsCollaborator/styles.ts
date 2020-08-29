@@ -10,13 +10,14 @@ const styles = StyleSheet.create({
     insideBox:{
         marginTop: -40,
         borderRadius: 20,
+        padding: 30,
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center'
     },
 
     formImg:{
-        margin: 40,
+        marginBottom: 20,
         width: 90,
         height: 90
     },
@@ -28,13 +29,14 @@ const styles = StyleSheet.create({
     },
 
     buttonsContainer: {
-        alignItems:'center'
+        alignItems:'center',
+        width: '100%',
     },
 
     buttons: {
         borderRadius: 8,
         margin: 20,
-        width: 320,
+        width: '100%',
         height: 45,
         backgroundColor: '#4949E7',
         alignItems: 'center',
@@ -45,7 +47,7 @@ const styles = StyleSheet.create({
     textButton: {
         fontSize: 16,
         color: '#FFF',
-        fontFamily: 'Rubik_500Medium',
+        fontFamily: 'Rubik_500Medium'
     },
 });
 

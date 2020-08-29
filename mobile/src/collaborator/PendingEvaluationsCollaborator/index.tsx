@@ -48,7 +48,7 @@ function PendingEvaluationsCollaborator() {
 
                     <RectButton onPress={handleNavigateToEvaluateIndicationsManager}style={styles.buttons}>
                         <Text style={styles.textButton}>
-                            Avaliação do seu Gestor
+                            Avaliação do seu gestor
                         </Text>
                     </RectButton>
 

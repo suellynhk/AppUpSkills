@@ -22,12 +22,13 @@ function ComplexProblemsSolvingCollaborator() {
     } 
 
     return (
-        <ScrollView>
+        
             <View style={styles.container}>
             
                 <PageHeader />
                 <View style={styles.insideBox}>
-                        <Text style={styles.titleText}> Resolução de Problemas Complexos </Text>
+                <ScrollView>
+                        <Text style={styles.titleText}>Resolução de Problemas Complexos </Text>
                         <Text style={styles.descriptionText}>
                         {'  '}Capacidade de percepção adequada dos problemas e de criação 
                         de estratégias efetivas para resolver situações novas em cenários 
@@ -58,10 +59,9 @@ function ComplexProblemsSolvingCollaborator() {
                             <Image source={rightIcon} style={styles.rightButtonImg}/>
                         </BorderlessButton>
                     </View>
- 
+                </ScrollView>
                 </View>
             </View>
-        </ScrollView>
 
     );
 }

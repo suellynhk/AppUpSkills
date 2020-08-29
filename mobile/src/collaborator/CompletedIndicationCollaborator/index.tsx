@@ -15,11 +15,12 @@ function CompletedIndicationCollaborator() {
     }
 
     return (
-        <ScrollView >
+       
         <View style={styles.container}>
             <PageHeader />
 
             <View style={styles.insideBox}>
+            <ScrollView >
                 <Text style={styles.labelText}> Obrigado! </Text> 
                 <Image source={confirmationIcon} style={styles.confirmationIcon}/>
                 <Text style={styles.confirmationText}>
@@ -30,9 +31,10 @@ function CompletedIndicationCollaborator() {
                 <RectButton onPress={handleNavigateToMainPageCollaborator} style={styles.button} >
                   <Text style={styles.buttonText}> Retornar ao menu principal </Text> 
                 </RectButton>
+                </ScrollView>
             </View>
         </View>
-        </ScrollView>
+      
     )
 
 }

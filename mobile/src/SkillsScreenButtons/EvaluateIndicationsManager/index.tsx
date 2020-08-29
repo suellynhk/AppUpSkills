@@ -35,11 +35,12 @@ function EvaluateIndicationsManager() {
 
 
     return (
-        <ScrollView>
+       
             <View style={styles.container}>
                 <PageHeader />
                 
                 <View style={styles.insideBox}>
+                <ScrollView>
                     <Image source={chooseImg} style={styles.chooseImg}/>
                     <Text style={styles.textMainScreen}>
                     Escolha qual Soft Skills deseja avaliar:
@@ -85,10 +86,10 @@ function EvaluateIndicationsManager() {
                             </Text>
                         </RectButton>
                     </View>             
-                        
+                </ScrollView>       
                 </View>
             </View>
-        </ScrollView>
+
     );
 }
 export default EvaluateIndicationsManager;
