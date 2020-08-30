@@ -1,7 +1,8 @@
 import React from 'react';
-import { Text, View,  Image } from 'react-native';
+import { Text, View,  Image, Dimensions } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import styles from './styles';
+
 
 interface CarouselItem {
   index: number,
@@ -14,27 +15,27 @@ function Carrossel()  {
     {
       index: 1,
       title: 'Julgamento e tomada de decisão',
-      image: 'https://i.imgur.com/oLRUR6n.png'
+      image: 'https://i.imgur.com/Sj73uHQ.png'
     },
     {
       index: 2,
       title: 'Flexibilidade',
-      image: 'https://i.imgur.com/VHqRMH5.png'
+      image: 'https://i.imgur.com/ySF3CtB.png'
     },
     {
       index: 3,
       title: 'Resolução de problemas complexos',
-      image: 'https://i.imgur.com/tjKU4pE.png',
+      image: 'https://i.imgur.com/7qjSejG.png',
     },
     {
       index: 4,
       title: 'Inteligência emocional',
-      image: 'https://i.imgur.com/KMtRE6S.png',
+      image: 'https://i.imgur.com/SS8qiJH.png',
     },
     {
       index: 5,
-      title: 'Gestão de pessoas',
-      image: 'https://i.imgur.com/RnUGTxb.png',
+      title: 'Liderança',
+      image: 'https://i.imgur.com/48GWXlS.png',
     }
   ];
 
@@ -55,12 +56,11 @@ function Carrossel()  {
         inactiveSlideOpacity={0.5}
         useScrollView={true}
         data={carouselItems}
-        sliderWidth={350}
-        itemWidth={260}
+        sliderWidth={Dimensions.get('window').width}
+        itemWidth={290}
         loop={true}
         activeSlideAlignment={'center'}
         renderItem={renderItem}
-
       />
       </View>
     )

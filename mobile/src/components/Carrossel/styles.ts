@@ -2,32 +2,31 @@ import {StyleSheet} from 'react-native';
 
 const styles= StyleSheet.create({
     container: { 
-      flex:1,
-      backgroundColor: '#E32',
+      flex: 1,
+      backgroundColor: '#FFF',
       alignItems: 'center',
       justifyContent: 'center',
     },
   
     carouselItemContainer:{
-      height: 300,
-      width: '100%',
+      height: 420,
       alignItems: 'center',
-      backgroundColor: '#333',
+      backgroundColor: '#4949E7',
       borderRadius: 8,
-      padding: 20,
+      padding:10
       
     },
   
     title: {
-      fontSize: 16,
+      fontSize: 14,
       fontWeight: 'bold',
       color: '#FFF',
     },
   
     carouselImg:{
-      marginTop: 10,
-      width: 206,
-      height: 150,
+      marginTop: 15,
+      width: '85%',
+      height: '85%',
       borderRadius: 8
     },
   

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { ScrollView, RectButton } from 'react-native-gesture-handler';
+import { ScrollView, RectButton, TextInput} from 'react-native-gesture-handler';
 import RadioButtonComponent from '../../../components/RadioButtons';
 import PageHeader from '../../../components/PageHeader';
 
@@ -47,6 +47,12 @@ function ComplexProblemsButton() {
                         3. Utiliza de estratégias inteligentes e bem definidas para a solução das adversidades
                         </Text>
                         <RadioButtonComponent />
+
+
+                        <Text style={styles.comment}>
+                        Deixe algum comentário sobre esta avaliação:
+                        </Text> 
+                        <TextInput multiline={true} numberOfLines={8} textAlignVertical={'top'} style={styles.input}/> 
 
                     <View style= {styles.bottomButton}>
                         <RectButton onPress={handleNavigateToEvaluateIndications} style={styles.button}>

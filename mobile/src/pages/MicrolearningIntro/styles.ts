@@ -18,12 +18,14 @@ const styles = StyleSheet.create({
     },
 
     videoIcon:{
+        alignSelf: 'center',
         marginTop: 20,
         width: 90,
         height: 90
     },
 
     labelText:{
+        alignSelf: 'center',
         fontFamily: 'Rubik_700Bold',
         marginTop: 20,
         fontSize: 20,

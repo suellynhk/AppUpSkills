@@ -22,13 +22,14 @@ function Landing() {
     return (
                 
         <View style={styles.container}>
-            <View style={styles.header}>
-                    <Text style={styles.textHeader}>
-                        Up {'\n'} Skills
-                    </Text>
-            </View>
-
+            
                 <View style={styles.insideBox}>
+                    <View style={styles.header}>
+                        <Text style={styles.textHeader}>
+                            Up {'\n'} Skills
+                        </Text>
+                    </View>
+
                     <Image source={landingImg} style={styles.landingImg}/>
 
                     <Text style={styles.landingText}>

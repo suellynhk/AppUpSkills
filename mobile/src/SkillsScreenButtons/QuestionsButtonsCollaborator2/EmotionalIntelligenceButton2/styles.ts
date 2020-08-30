@@ -69,6 +69,25 @@ const styles = StyleSheet.create({
         fontFamily: 'Rubik_500Medium',
         color: '#FFF'
     },
+    
+    comment:{
+        marginTop: 40,
+        fontSize: 16,
+        fontFamily: 'Rubik_500Medium',
+        textAlign: 'justify',
+    },
+        
+    input: {
+        padding: 10,
+        marginTop: 10,
+        width: '100%',
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#4949E7',
+        backgroundColor: '#FFF',
+        fontFamily: 'Rubik_400Regular'
+    },
+        
 
 });
 

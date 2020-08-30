@@ -10,27 +10,22 @@ const styles = StyleSheet.create({
     insideBox:{
         flex: 1,
         marginTop: -40,
-        padding: 25,
         borderRadius: 20,
         backgroundColor: '#FFF',
+        justifyContent: 'center',
         alignItems: 'center',
         },
 
-    dashboardIcon: {
-        alignSelf:'center',
-        marginBottom: 20,
-        width: 90,
-        height: 90,
-    },
-
     labelText: {
         alignSelf:'center',
-        marginBottom: 20,
+        marginBottom: 30,
+        marginTop: 40,
         fontSize: 20,
         fontFamily: 'Rubik_700Bold',
     },
 
-    carouselContainer:{
+    carouselContainer: {
+        height: '100%',
         width: '100%'
     },
    

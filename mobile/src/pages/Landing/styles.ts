@@ -3,52 +3,50 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     header:{
         width: '100%',
-        height: 110,
-        justifyContent: 'flex-start',
-        alignItems: 'flex-start',
-        paddingTop: 30,
-        backgroundColor: '#4949E7',
+        height: 70,
+        backgroundColor: '#F8F8FF',
     },
 
     textHeader:{
-        fontSize: 25,
+        fontSize: 22,
         fontFamily: 'Dosis_700Bold',
-        color: '#FFF',
-        lineHeight: 30,
+        color: '#4949E7',
+        lineHeight: 25,
     },
 
     container:{
+        padding: 50,
         flex: 1,
         backgroundColor: '#4949E7',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 30,
-        height: 'auto'
     },
 
     insideBox: {
-        width: 'auto',
-        height: 'auto',
+        width: '100%',
+        height: '80%',
         borderRadius: 8,
         backgroundColor: '#F8F8FF',
-        alignItems: 'center',
         padding: 30,
     },
 
     landingImg: {
+        alignSelf: 'center',
         marginLeft: 8,
-        width: 120,
-        height: 120,
+        width: 100,
+        height: 100,
     },
 
     landingText:{
-        marginTop: 40,
-        fontSize: 18,
+        alignSelf: 'center',
+        marginTop: 25,
+        fontSize: 16,
         lineHeight: 30,
         fontFamily: 'Rubik_400Regular' 
     },
 
     landingQuestion: {
+        alignSelf: 'center',
         marginTop: 20,
         fontSize: 16,
         justifyContent: 'flex-start',
@@ -56,6 +54,7 @@ const styles = StyleSheet.create({
     },
 
     buttonsContainer: {
+        alignSelf: 'center',
         marginTop: 20,
         justifyContent: "center"
     },

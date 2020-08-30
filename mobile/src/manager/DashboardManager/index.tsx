@@ -15,7 +15,6 @@ function DashboardManager() {
                
                 <View style={styles.insideBox}>
                 <ScrollView>
-                    <Image  source={dashboardIcon} style={styles.dashboardIcon}/>
                     <Text style={styles.labelText}> Dashboard </Text>
                     <View style={styles.carouselContainer}>
                         <Carrossel/>
