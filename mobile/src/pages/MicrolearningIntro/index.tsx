@@ -3,7 +3,7 @@ import { View, Text, Image } from 'react-native';
 import { Video } from 'expo-av';
 import PageHeader from '../../components/PageHeader';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
-import { BorderlessButton } from 'react-native-gesture-handler';
+import { BorderlessButton, ScrollView } from 'react-native-gesture-handler';
 import styles from './styles';
 
 import rightIcon from '../../assets/images/icons/right.png';  
@@ -33,6 +33,7 @@ function MicrolearningIntro() {
         <View style={styles.container}>
             <PageHeader />
             <View style={styles.insideBox}  >
+                <ScrollView>
                 <Image source={videoIcon} style={styles.videoIcon}/>
                 <Text style={styles.labelText}> Microlearning  </Text> 
                 <Text style={styles.microlearningText}>
@@ -59,6 +60,7 @@ function MicrolearningIntro() {
                     <Image source={rightIcon} style={styles.rightIcon}/>
                     </BorderlessButton>
                 </View>
+                </ScrollView>
             </View>
         </View> 
     )

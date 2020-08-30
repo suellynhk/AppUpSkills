@@ -3,29 +3,31 @@ import {StyleSheet} from 'react-native';
 const styles= StyleSheet.create({
     container: { 
       flex:1,
-      backgroundColor: '#fff',
+      backgroundColor: '#E32',
       alignItems: 'center',
+      justifyContent: 'center',
     },
   
     carouselItemContainer:{
+      height: 300,
+      width: '100%',
       alignItems: 'center',
       backgroundColor: '#333',
       borderRadius: 8,
-      padding: 25,
-      height: 300,
-      width: 300,
+      padding: 20,
+      
     },
   
     title: {
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: 'bold',
-      color: '#FFF'
+      color: '#FFF',
     },
   
     carouselImg:{
       marginTop: 10,
-      width:'80%',
-      height:'50%',
+      width: 206,
+      height: 150,
       borderRadius: 8
     },
   

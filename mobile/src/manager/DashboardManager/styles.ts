@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
     container:{
         flex: 1,
         backgroundColor: '#FFF',
-        minHeight: 850,
     },
 
     insideBox:{
@@ -14,22 +13,25 @@ const styles = StyleSheet.create({
         padding: 25,
         borderRadius: 20,
         backgroundColor: '#FFF',
-        justifyContent: 'center',
-        alignItems: 'center', 
-    },
+        alignItems: 'center',
+        },
 
     dashboardIcon: {
-        marginTop: 10,
+        alignSelf:'center',
         marginBottom: 20,
         width: 90,
         height: 90,
     },
 
     labelText: {
+        alignSelf:'center',
         marginBottom: 20,
-        marginTop: 10,
         fontSize: 20,
         fontFamily: 'Rubik_700Bold',
+    },
+
+    carouselContainer:{
+        width: '100%'
     },
    
 });

@@ -17,11 +17,12 @@ function DashboardManager() {
                 <ScrollView>
                     <Image  source={dashboardIcon} style={styles.dashboardIcon}/>
                     <Text style={styles.labelText}> Dashboard </Text>
-                  
+                    <View style={styles.carouselContainer}>
+                        <Carrossel/>
+                    </View>
                 </ScrollView>
                 </View>
             </View>
-
     );
 }
 

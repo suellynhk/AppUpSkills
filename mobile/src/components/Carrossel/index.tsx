@@ -4,45 +4,45 @@ import Carousel from 'react-native-snap-carousel';
 import styles from './styles';
 
 interface CarouselItem {
-  key: any,
-  index: any,
+  index: number,
   title: string,
-  image: string
+  image: string,
 }
 
-const Carrossel: React.FC<CarouselItem> = ({ title, image }) => {
-  const carouselItems = [
+function Carrossel()  {
+  const carouselItems : CarouselItem[]= [
     {
-      title: 'Empatia',
-      image: 'https://d1x4bjge7r9nas.cloudfront.net/wp-content/uploads/2016/04/23214423/tumblr_static_tumblr_m78u9iwzjz1rbs3w3o1_500_large.jpg'
-    },
-    {
+      index: 1,
       title: 'Julgamento e tomada de decisão',
-      image: 'https://31.media.tumblr.com/tumblr_m6ni2bfcSY1r5snloo1_500.png'
+      image: 'https://i.imgur.com/oLRUR6n.png'
     },
     {
-      title: 'Flexibilidade cognitiva',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwKPFGmwunYTm-zTi1EZ0JXDPJjw2NkRN49Q&usqp=CAU'
+      index: 2,
+      title: 'Flexibilidade',
+      image: 'https://i.imgur.com/VHqRMH5.png'
     },
     {
+      index: 3,
       title: 'Resolução de problemas complexos',
-      image: 'https://i.pinimg.com/originals/79/46/5f/79465f822218e5bb321c3ec7f8002dfc.jpg',
+      image: 'https://i.imgur.com/tjKU4pE.png',
     },
     {
+      index: 4,
       title: 'Inteligência emocional',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlnlVpvT-57YfguHnL6S8z6zgCarlecZ0nHw&usqp=CAU',
+      image: 'https://i.imgur.com/KMtRE6S.png',
     },
     {
+      index: 5,
       title: 'Gestão de pessoas',
-      image: 'https://www.socialdub.com/groupspictures/44278/442782469530031392695.jpg?x2',
+      image: 'https://i.imgur.com/RnUGTxb.png',
     }
-  ]
+  ];
 
   function renderItem({item, index}:any) {
     return(
-      <View style={styles.carouselItemContainer}>(
-                <Text key={index} style={styles.title}>{item.title}</Text>
-                <Image style={styles.carouselImg} source={{uri:`${item.image}`}} />
+      <View style={styles.carouselItemContainer}>
+        <Text key={index} style={styles.title}>{item.title}</Text>
+        <Image style={styles.carouselImg} source={{uri:`${item.image}`}}/>
       </View>
     );
   }
@@ -51,17 +51,19 @@ const Carrossel: React.FC<CarouselItem> = ({ title, image }) => {
       <View style={styles.container}>
       <Carousel
         showsHorizontalScrollIndicator
-        layout={'stack'}
+        inactiveSlideScale={0.92}
+        inactiveSlideOpacity={0.5}
         useScrollView={true}
         data={carouselItems}
-        sliderWidth={300}
-        itemWidth={300}
+        sliderWidth={350}
+        itemWidth={260}
         loop={true}
-        layoutCardOffset={50}
-        snapToAlignment={"center"}
+        activeSlideAlignment={'center'}
         renderItem={renderItem}
+
       />
-    </View>)
+      </View>
+    )
 };
 
 export default Carrossel;
