@@ -1370,6 +1370,14 @@
     "@types/react" "*"
     "@types/react-native" "*"
 
+"@types/react-native-video@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@types/react-native-video/-/react-native-video-5.0.1.tgz#605b3e3170b2a91c514e828b486030ff426e2e9c"
+  integrity sha512-GxQV9fR7EzE2L02pKk6RpklcD6cbUxph9xl6OYaiY+YJNSlm0H6sQXLJ3sYRybmyoQQpF8VLncOkWjlMzVnbmQ==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+
 "@types/react-native@*":
   version "0.63.8"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.63.8.tgz#73ec087122c64c309eeaf150b565b8d755f0fb1f"
@@ -2655,6 +2663,11 @@ expo-status-bar@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.0.2.tgz#2441a77c56be31597898337b0d086981f2adefd8"
   integrity sha512-5313u744GcLzCadxIPXyTkYw77++UXv1dXCuhYDxDbtsEf93iMra7WSvzyE8a7mRQLIIPRuGnBOdrL/V1C7EOQ==
+
+expo-video-thumbnails@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/expo-video-thumbnails/-/expo-video-thumbnails-4.2.1.tgz#8867ecf143acbca6425da05d97beaa0cd31b2bc2"
+  integrity sha512-HxnK/AzGHXNWCB0GnTLXDnk76Nv/MgId1XgrxuESsPFkzUptxhRsMadD/27Diny37Ele2MZVAjID25ZMbs8N5A==
 
 expo@~38.0.8:
   version "38.0.9"
@@ -4708,7 +4721,7 @@ promise@^8.0.3:
   dependencies:
     asap "~2.0.6"
 
-prop-types@15.7.2, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.7.2, prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -4913,10 +4926,10 @@ react-native-vector-icons@^7.0.0:
     prop-types "^15.7.2"
     yargs "^15.0.2"
 
-react-native-video@^5.1.0-alpha7:
-  version "5.1.0-alpha7"
-  resolved "https://registry.yarnpkg.com/react-native-video/-/react-native-video-5.1.0-alpha7.tgz#6591f348f4e2ca12baf96c01ef4c2f5396f3ab02"
-  integrity sha512-mJs0reEGWbtNn2Fybhz1u2K3HgdqfnMWLvfsyfjJbz66XXNobjWTAujcgTcPTHePLlpYwnXiVNMHyHNS4i0JyQ==
+react-native-video@^5.1.0-alpha8:
+  version "5.1.0-alpha8"
+  resolved "https://registry.yarnpkg.com/react-native-video/-/react-native-video-5.1.0-alpha8.tgz#f0cb4cb2d74154b7916e68bef0f9b9cdcfe5f568"
+  integrity sha512-RRDSxqKe2F4OtiDWKCQlwVzvcsZ/TcWQdRxeAE3wsGBmFpAYFyhCz52QkFXgQQgYUuIK6Wd+j2lVxUoLp4+R2w==
   dependencies:
     keymirror "^0.1.1"
     prop-types "^15.7.2"
@@ -4937,6 +4950,13 @@ react-native-web@~0.11.7:
     normalize-css-color "^1.0.2"
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.4"
+
+react-native-youtube@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-youtube/-/react-native-youtube-2.0.1.tgz#1b6275ca2c1db8e13539a59ccfda8ae8479b1590"
+  integrity sha512-CVzJyynKoEEMXHv/Nx+s8HdovnfVIZs0DIUjWUQsgEd+kbBubXJZTguCKj4WigI8SI1LJ0thF8SEGbdqW8oJkw==
+  dependencies:
+    prop-types "^15.5.0"
 
 react-native@0.63.2:
   version "0.63.2"
