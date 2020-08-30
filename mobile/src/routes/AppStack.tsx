@@ -63,6 +63,7 @@ import JudgmentButtonManager2 from '../SkillsScreenButtons/QuestionsButtonsManag
 import PeopleManagementButton2 from '../SkillsScreenButtons/QuestionsButtonsManager2/PeopleManagementButton2';
 import EvaluateIndicationsCollaborator2 from '../SkillsScreenButtons/EvaluateIndicationsCollaborator2';
 import EvaluateIndicationsManager2 from '../SkillsScreenButtons/EvaluateIndicationsManager2';
+import DashboardCollaborator from '../collaborator/DashboardCollaborator';
 
 
 
@@ -114,6 +115,7 @@ function AppStack() {
                 <Screen name="SelfEvaluationCollaborator" component={SelfEvaluationCollaborator} />
                 <Screen name="RefusedEvaluationCollaborator" component={RefusedEvaluationCollaborator} />
                 <Screen name="EvaluateColleaguesCollaborator" component={EvaluateColleaguesCollaborator} />
+                <Screen name="DashboardCollaborator" component={DashboardCollaborator} />
                 <Screen name="FlexibilityCollaborator" component={FlexibilityCollaborator} />
                 <Screen name="ComplexProblemsSolvingCollaborator" component={ComplexProblemsSolvingCollaborator} />
                 <Screen name="EmotionalIntelligenceCollaborator" component={EmotionalIntelligenceCollaborator} />
