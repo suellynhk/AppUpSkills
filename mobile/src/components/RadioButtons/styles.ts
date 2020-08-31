@@ -6,14 +6,9 @@ const styles = StyleSheet.create({
         height: 26,
     },
 
-    labelBox: {
-        width: 340,
-        flexDirection: 'row',
-        justifyContent: 'space-between'
-    },
-
     horizontalRadioButton:{
-        width: 350,
+        padding: 10,
+        width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between'
     },

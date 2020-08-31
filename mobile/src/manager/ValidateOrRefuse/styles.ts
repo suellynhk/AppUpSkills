@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
     },
 
     textHeader: {
-        fontSize: 20,
-        fontFamily: 'Rubik_700Bold'
+        fontSize: 18,
+        fontFamily: 'Rubik_500Medium'
     },
 
     textValidation:{
@@ -45,8 +45,7 @@ const styles = StyleSheet.create({
     name:{
         marginTop: 10,
         marginBottom: 10,
-        fontSize: 18,
-        color: '#333',
+        fontSize: 17,
         fontFamily: 'Rubik_500Medium'
     },
 

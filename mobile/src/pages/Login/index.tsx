@@ -66,10 +66,11 @@ function Login() {
     };
 
     return(
-        <ScrollView>
+       
         <View style={styles.container}> 
             <PageHeaderBack />
                 <View style={styles.loginForm}>
+                <ScrollView>
                     <View style={styles.loginIconBox}>
                         <Image source={loginIcon} style={styles.loginIcon}/>
                         <Text style={styles.textHeader}>
@@ -94,9 +95,10 @@ function Login() {
                             <Text style={styles.textToRegistration}>Ainda não possuo cadastro</Text>
                         </BorderlessButton>
                     </View>
+                </ScrollView>
                 </View>
         </View>
-        </ScrollView>
+        
     )
 }
 

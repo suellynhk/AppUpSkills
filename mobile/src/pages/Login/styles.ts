@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     },
 
     loginForm:{
+        flex: 1,
         marginTop: -40,
         padding: 30,
         borderRadius: 20,
@@ -20,19 +21,20 @@ const styles = StyleSheet.create({
     },
 
     loginIcon: {
+        alignSelf: 'center',
         width: 90,
         height: 90
     },
 
     textHeader: {
-        fontSize: 20,
+        fontSize: 18,
         marginTop: 30,
         marginBottom: 20,
-        fontFamily: 'Rubik_700Bold'
+        fontFamily: 'Rubik_500Medium'
     },
 
     textLabel: {
-        fontSize: 16,
+        fontSize: 15,
         marginBottom: 5,
         marginTop: 20,
         fontFamily: 'Rubik_400Regular'
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
     button:{
         marginTop: 15,
         alignItems: 'flex-end',
-        marginBottom: 180,
+        marginBottom: 30,
     },
 
     submitButton: {

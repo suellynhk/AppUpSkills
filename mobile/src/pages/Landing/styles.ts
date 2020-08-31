@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
 
     insideBox: {
         width: '100%',
-        height: '80%',
+        height: 'auto',
         borderRadius: 8,
         backgroundColor: '#F8F8FF',
         padding: 30,

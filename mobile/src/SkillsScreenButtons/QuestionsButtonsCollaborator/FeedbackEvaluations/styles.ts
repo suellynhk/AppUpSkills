@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: 740,
     },
 
     labelText: {
@@ -40,6 +39,7 @@ const styles = StyleSheet.create({
     },
 
     input: {
+        padding: 10,
         marginTop: 10,
         width: '100%',
         borderRadius: 8,

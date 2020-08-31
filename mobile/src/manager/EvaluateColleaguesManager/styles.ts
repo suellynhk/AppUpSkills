@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     },
 
     buttonsContainer: {
-        width: '65%',
+        width: '70%',
         flexDirection: 'row',
         justifyContent: 'space-between',
     },
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     buttons: {
         borderRadius: 8,
         marginTop: 15,
-        width: 100,
+        width: 90,
         height: 45,
         backgroundColor: '#4949E7',
         alignItems: 'center',

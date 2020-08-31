@@ -23,12 +23,11 @@ const styles = StyleSheet.create({
 
     textMainScreen: {
         marginBottom: 20,
-        fontSize: 20,
-        fontFamily: 'Rubik_700Bold',
+        fontSize: 18,
+        fontFamily: 'Rubik_500Medium',
     },
 
     buttonsContainer: {
-        marginTop: 30,
         width: '100%',
         alignItems:'center',
     },
@@ -44,7 +43,7 @@ const styles = StyleSheet.create({
     },
     
     textButton: {
-        fontSize: 16,
+        fontSize: 15,
         color: '#FFF',
         fontFamily: 'Rubik_500Medium',
     },

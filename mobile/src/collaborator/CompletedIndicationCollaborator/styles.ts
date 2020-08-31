@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 
     confirmationText:{
         margin: 15,
-        fontSize: 16,
+        fontSize: 15,
         fontFamily: 'Rubik_400Regular',
         textAlign: "justify"
     },

@@ -14,20 +14,21 @@ function ConfirmedRegistration() {
     }
 
     return (
-        <ScrollView  contentContainerStyle={{flex:1}}> 
+       
         <View style={styles.container}>
             <PageHeader />
             <View style={styles.insideBox}>
+            <ScrollView> 
                 <Text style={styles.confirmationText}> Cadastro realizado com sucesso! </Text> 
                 <Image source={confirmationIcon} style={styles.confirmationIcon}/>
             
                 <BorderlessButton onPress={handleNavigateToLoginPage}>
                   <Text style={styles.linkButton}> Realizar Login! </Text> 
                 </BorderlessButton>
-
+            </ScrollView>
             </View>
         </View> 
-        </ScrollView>
+       
     
     )
 

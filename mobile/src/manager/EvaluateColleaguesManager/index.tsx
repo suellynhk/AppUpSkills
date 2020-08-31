@@ -36,7 +36,7 @@ function EvaluateColleaguesManager() {
                     <Image source={colleaguesImg} style={styles.colleaguesImg}/>
 
                     <Text style={styles.textPendingEvaluation}>
-                    Avaliação de colabores e gestores:
+                    Avaliação de colaboradores e gestores:
                     </Text>
 
                     <Text style={styles.textEvaluation}>

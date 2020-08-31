@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     titleText:{
         marginTop: 20,
         marginBottom: 10 ,
-        fontSize: 20,
+        fontSize: 18,
         fontFamily: 'Rubik_500Medium',
     },
 

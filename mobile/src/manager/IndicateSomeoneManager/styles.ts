@@ -26,10 +26,10 @@ const styles = StyleSheet.create({
     },
     
     textHeader: {
-        fontSize: 20,
+        fontSize: 18,
         marginTop: 20,
         marginBottom: 20,
-        fontFamily: 'Rubik_700Bold',
+        fontFamily: 'Rubik_500Medium',
         textAlign: 'center'
     },
     
@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     },
 
     input: {
+        paddingLeft: 10,
         width: '100%',
         height: 40,
         borderRadius: 8,

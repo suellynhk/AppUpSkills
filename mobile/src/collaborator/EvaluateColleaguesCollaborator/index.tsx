@@ -31,7 +31,7 @@ function EvaluateColleaguesCollaborator() {
                     <Image source={colleaguesImg} style={styles.colleaguesImg}/>
 
                     <Text style={styles.textPendingEvaluation}>
-                    Avaliação de colabores:
+                    Avaliação de colaboradores:
                     </Text>
 
                     <Text style={styles.textEvaluation}>

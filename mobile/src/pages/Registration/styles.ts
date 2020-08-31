@@ -27,13 +27,13 @@ const styles = StyleSheet.create({
     },
     
     textHeader: {
-        fontSize: 20,
+        fontSize: 18,
         marginTop: 15,
-        fontFamily: 'Rubik_700Bold',
+        fontFamily: 'Rubik_500Medium',
     },
 
     textLabel: {
-        fontSize: 16,
+        fontSize: 15,
         marginTop: 20,
         marginBottom: 5,
         fontFamily: 'Rubik_400Regular'

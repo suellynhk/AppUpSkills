@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
+        flex: 1,
         marginTop: -40,
         padding: 16,
         borderRadius: 20,
@@ -17,18 +18,21 @@ const styles = StyleSheet.create({
     },
 
     confirmationText: {
+        alignSelf: 'center',
         marginTop: 150,
         fontSize: 18,
-        fontFamily: 'Rubik_700Bold'
+        fontFamily: 'Rubik_500Medium'
     },
 
     confirmationIcon: {
+        alignSelf: 'center',
         margin: 50,
         width: 100,
         height: 100
     },
 
     linkButton: {
+        alignSelf: 'center',
         fontSize: 18,
         textDecorationLine: 'underline',
         color: '#4169E1',

@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     textMainScreen: {
         marginBottom: 20,
         fontSize: 18,
-        fontFamily: 'Rubik_700Bold'
+        fontFamily: 'Rubik_500Medium'
     },
 
     buttonContainer:{
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     },
 
     textButton:{
-        fontSize: 14,
+        fontSize: 15,
         fontFamily: 'Rubik_500Medium',
         alignItems: 'flex-end',
         color:'#FFF'

@@ -26,9 +26,9 @@ const styles = StyleSheet.create({
 
     labelText:{
         alignSelf: 'center',
-        fontFamily: 'Rubik_700Bold',
+        fontFamily: 'Rubik_500Medium',
         marginTop: 20,
-        fontSize: 20,
+        fontSize: 18,
     },
 
     microlearningText:{
@@ -36,7 +36,8 @@ const styles = StyleSheet.create({
         marginTop: 20,
         marginBottom: 20,
         margin: 10,
-        fontSize: 17,
+        fontSize: 15,
+        lineHeight: 18,
         textAlign: 'justify'
     },
 

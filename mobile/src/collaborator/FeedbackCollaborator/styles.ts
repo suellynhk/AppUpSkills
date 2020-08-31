@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     },
 
     input: {
+        padding: 10,
         marginTop: 10,
         width: '100%',
         borderRadius: 8,

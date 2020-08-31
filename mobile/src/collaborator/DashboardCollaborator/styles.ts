@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
         alignSelf:'center',
         marginBottom: 30,
         marginTop: 40,
-        fontSize: 20,
-        fontFamily: 'Rubik_700Bold',
+        fontSize: 18,
+        fontFamily: 'Rubik_500Medium',
     },
 
     carouselContainer: {

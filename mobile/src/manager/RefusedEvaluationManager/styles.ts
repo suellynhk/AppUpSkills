@@ -10,18 +10,17 @@ const styles = StyleSheet.create({
     insideBox:{ 
         flex: 1,
         marginTop: -40,
-        padding: 30,
+        padding: 35,
         borderRadius: 20,
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: 740,
     },
 
     labelText: {
         marginBottom: 30,
         fontSize: 20,
-        fontFamily: 'Rubik_700Bold'
+        fontFamily: 'Rubik_700Bold',
     },
 
     confirmationText:{
@@ -31,6 +30,7 @@ const styles = StyleSheet.create({
     },
 
     informationIcon: {
+        alignSelf: 'center',
         marginBottom: 40,
         width: 90,
         height: 90

@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
 
     textMainScreen: {
         marginBottom: 20,
-        fontSize: 20,
-        fontFamily: 'Rubik_700Bold'
+        fontSize: 18,
+        fontFamily: 'Rubik_500Medium'
     },
 
     buttonsContainer: {
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     },
     
     textButton: {
-        fontSize: 16,
+        fontSize: 15,
         color: '#FFF',
         fontFamily: 'Rubik_500Medium'
     },
