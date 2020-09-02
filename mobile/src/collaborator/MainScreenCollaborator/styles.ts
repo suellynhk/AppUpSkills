@@ -8,20 +8,24 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
+        flex: 1,
         marginTop: -40,
         borderRadius: 20,
+        padding: 35,
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center',
     },
 
     chooseImg:{
-        margin: 40,
+        alignSelf:'center',
+        marginBottom: 30,
         width: 90,
-        height: 90,
+        height: 90
     },
 
     textMainScreen: {
+        alignSelf:'center',
         marginBottom: 20,
         fontSize: 18,
         fontFamily: 'Rubik_500Medium',
@@ -33,9 +37,10 @@ const styles = StyleSheet.create({
     },
 
     buttons: {
+        padding: 20,
         borderRadius: 8,
-        margin: 20,
-        width: 320,
+        marginBottom: 30,
+        width: '100%',
         height: 45,
         backgroundColor: '#4949E7',
         alignItems: 'center',

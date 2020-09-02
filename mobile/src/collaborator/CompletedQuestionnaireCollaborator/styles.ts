@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: 740,
     },
 
     labelText: {
@@ -27,7 +26,6 @@ const styles = StyleSheet.create({
     },
 
     confirmationText:{
-        margin: 15,
         fontSize: 15,
         fontFamily: 'Rubik_400Regular',
         textAlign: "center"

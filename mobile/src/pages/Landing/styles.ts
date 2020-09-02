@@ -11,19 +11,20 @@ const styles = StyleSheet.create({
         fontSize: 22,
         fontFamily: 'Dosis_700Bold',
         color: '#4949E7',
-        lineHeight: 25,
+        lineHeight: 22,
     },
 
     container:{
-        padding: 50,
         flex: 1,
         backgroundColor: '#4949E7',
         alignItems: 'center',
         justifyContent: 'center',
+        paddingTop: 40,
+        paddingBottom: 40,
     },
 
     insideBox: {
-        width: '100%',
+        width: 'auto',
         height: 'auto',
         borderRadius: 8,
         backgroundColor: '#F8F8FF',
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 25,
         fontSize: 16,
-        lineHeight: 30,
+        lineHeight: 22,
         fontFamily: 'Rubik_400Regular' 
     },
 

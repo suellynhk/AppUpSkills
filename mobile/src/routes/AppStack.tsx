@@ -39,32 +39,40 @@ import CompletedIndicationCollaborator from '../collaborator/CompletedIndication
 import SelfEvaluationCollaborator from '../collaborator/SelfEvaluationCollaborator';
 import RefusedEvaluationCollaborator from '../collaborator/RefusedEvaluationCollaborator';
 import EvaluateColleaguesCollaborator from '../collaborator/EvaluateColleaguesCollaborator';
-import EvaluateIndicationsCollaborator from '../SkillsScreenButtons/EvaluateIndicationsCollaborator';
-import EvaluateIndicationsManager from '../SkillsScreenButtons/EvaluateIndicationsManager';
-import ComplexProblemsButtonManager from '../SkillsScreenButtons/QuestionsButtonsManager/ComplexProblemsButtonManager';
-import EmotionalIntelligenceButtonManager from '../SkillsScreenButtons/QuestionsButtonsManager/EmotionalIntelligenceButtonManager';
-import FlexibilityButtonManager from '../SkillsScreenButtons/QuestionsButtonsManager/FlexibilityButtonManager';
-import JudgmentButtonManager from '../SkillsScreenButtons/QuestionsButtonsManager/JudgmentButtonManager';
-import PeopleManagementButton from '../SkillsScreenButtons/QuestionsButtonsManager/PeopleManagementButton';
-import FeedbackEvaluationsManager from '../SkillsScreenButtons/QuestionsButtonsManager/FeedbackEvaluationsManager';
-import FeedbackEvaluations from '../SkillsScreenButtons/QuestionsButtonsCollaborator/FeedbackEvaluations';
-import ComplexProblemsButton from '../SkillsScreenButtons/QuestionsButtonsCollaborator/ComplexProblemsButton';
-import EmotionalIntelligenceButton from '../SkillsScreenButtons/QuestionsButtonsCollaborator/EmotionalIntelligenceButton';
-import FlexibilityButton from '../SkillsScreenButtons/QuestionsButtonsCollaborator/FlexibilityButton';
-import JudgmentButton from '../SkillsScreenButtons/QuestionsButtonsCollaborator/JudgmentButton';
-import FlexibilityButton2 from '../SkillsScreenButtons/QuestionsButtonsCollaborator2/FlexibilityButton2';
-import ComplexProblemsButton2 from '../SkillsScreenButtons/QuestionsButtonsCollaborator2/ComplexProblemsButton2';
-import JudgmentButton2 from '../SkillsScreenButtons/QuestionsButtonsCollaborator2/JudgmentButton2';
-import EmotionalIntelligenceButton2 from '../SkillsScreenButtons/QuestionsButtonsCollaborator2/EmotionalIntelligenceButton2';
-import ComplexProblemsButtonManager2 from '../SkillsScreenButtons/QuestionsButtonsManager2/ComplexProblemsButtonManager2';
-import EmotionalIntelligenceButtonManager2 from '../SkillsScreenButtons/QuestionsButtonsManager2/EmotionalIntelligenceButtonManager2';
-import FlexibilityButtonManager2 from '../SkillsScreenButtons/QuestionsButtonsManager2/FlexibilityButtonManager2';
-import JudgmentButtonManager2 from '../SkillsScreenButtons/QuestionsButtonsManager2/JudgmentButtonManager2';
-import PeopleManagementButton2 from '../SkillsScreenButtons/QuestionsButtonsManager2/PeopleManagementButton2';
-import EvaluateIndicationsCollaborator2 from '../SkillsScreenButtons/EvaluateIndicationsCollaborator2';
-import EvaluateIndicationsManager2 from '../SkillsScreenButtons/EvaluateIndicationsManager2';
+import EvaluateIndicationsManager from '../pages/SkillsScreenButtons/EvaluateIndicationsManager';
+import EvaluateIndicationsCollaborator from '../pages/SkillsScreenButtons/EvaluateIndicationsCollaborator';
+import ComplexProblemsButtonManager from '../pages/SkillsScreenButtons/QuestionsButtonsManager/ComplexProblemsButtonManager';
+import FlexibilityButtonManager from '../pages/SkillsScreenButtons/QuestionsButtonsManager/FlexibilityButtonManager';
+import JudgmentButtonManager from '../pages/SkillsScreenButtons/QuestionsButtonsManager/JudgmentButtonManager';
+import EmotionalIntelligenceButtonManager from '../pages/SkillsScreenButtons/QuestionsButtonsManager/EmotionalIntelligenceButtonManager';
+import PeopleManagementButton from '../pages/SkillsScreenButtons/QuestionsButtonsManager/PeopleManagementButton';
+import FeedbackEvaluationsManager from '../pages/SkillsScreenButtons/QuestionsButtonsManager/FeedbackEvaluationsManager';
 import DashboardCollaborator from '../collaborator/DashboardCollaborator';
-
+import ComplexProblemsButton from '../pages/SkillsScreenButtons/QuestionsButtonsCollaborator/ComplexProblemsButton';
+import FlexibilityButton from '../pages/SkillsScreenButtons/QuestionsButtonsCollaborator/FlexibilityButton';
+import FeedbackEvaluations from '../pages/SkillsScreenButtons/QuestionsButtonsCollaborator/FeedbackEvaluations';
+import JudgmentButton from '../pages/SkillsScreenButtons/QuestionsButtonsCollaborator/JudgmentButton';
+import EmotionalIntelligenceButton from '../pages/SkillsScreenButtons/QuestionsButtonsCollaborator/EmotionalIntelligenceButton';
+import FlexibilityButton2 from '../pages/SkillsScreenButtons/QuestionsButtonsCollaborator2/FlexibilityButton2';
+import ComplexProblemsButton2 from '../pages/SkillsScreenButtons/QuestionsButtonsCollaborator2/ComplexProblemsButton2';
+import JudgmentButton2 from '../pages/SkillsScreenButtons/QuestionsButtonsCollaborator2/JudgmentButton2';
+import EmotionalIntelligenceButton2 from '../pages/SkillsScreenButtons/QuestionsButtonsCollaborator2/EmotionalIntelligenceButton2';
+import ComplexProblemsButtonManager2 from '../pages/SkillsScreenButtons/QuestionsButtonsManager2/ComplexProblemsButtonManager2';
+import EmotionalIntelligenceButtonManager2 from '../pages/SkillsScreenButtons/QuestionsButtonsManager2/EmotionalIntelligenceButtonManager2';
+import FlexibilityButtonManager2 from '../pages/SkillsScreenButtons/QuestionsButtonsManager2/FlexibilityButtonManager2';
+import JudgmentButtonManager2 from '../pages/SkillsScreenButtons/QuestionsButtonsManager2/JudgmentButtonManager2';
+import PeopleManagementButton2 from '../pages/SkillsScreenButtons/QuestionsButtonsManager2/PeopleManagementButton2';
+import EvaluateIndicationsCollaborator2 from '../pages/SkillsScreenButtons/EvaluateIndicationsCollaborator2';
+import EvaluateIndicationsManager2 from '../pages/SkillsScreenButtons/EvaluateIndicationsManager2';
+import MicrolearningComplexProblems from '../pages/MicrolearningDashboardManager/MicrolearningComplexProblems';
+import MicrolearningJudgment from '../pages/MicrolearningDashboardManager/MicrolearningJudgment';
+import MicrolearningPeopleManagement from '../pages/MicrolearningDashboardManager/MicrolearningPeopleManagement';
+import MicrolearningEmotionalIntelligence from '../pages/MicrolearningDashboardManager/MicrolearningEmotionalIntelligence';
+import MicrolearningFlexibility from '../pages/MicrolearningDashboardManager/MicrolearningFlexibility';
+import MicrolearningFlexibilityCollaborator from '../pages/MicrolearningDashboardCollaborator/MicrolearningFlexibilityCollaborator';
+import MicrolearningComplexProblemsCollaborator from '../pages/MicrolearningDashboardCollaborator/MicrolearningComplexProblemsCollaborator';
+import MicrolearningEmotionalIntelligenceCollaborator from '../pages/MicrolearningDashboardCollaborator/MicrolearningEmotionalIntelligenceCollaborator';
+import MicrolearningJudgmentCollaborator from '../pages/MicrolearningDashboardCollaborator/MicrolearningJudgmentCollaborator';
 
 
 const { Navigator, Screen } = createStackNavigator();
@@ -139,6 +147,16 @@ function AppStack() {
                 <Screen name="PeopleManagementButton2" component={PeopleManagementButton2} />
                 <Screen name="EvaluateIndicationsCollaborator2" component={EvaluateIndicationsCollaborator2} />
                 <Screen name="EvaluateIndicationsManager2" component={EvaluateIndicationsManager2} />
+                
+                <Screen name="MicrolearningComplexProblems" component={MicrolearningComplexProblems} />
+                <Screen name="MicrolearningFlexibility" component={MicrolearningFlexibility} />
+                <Screen name="MicrolearningEmotionalIntelligence" component={MicrolearningEmotionalIntelligence} />
+                <Screen name="MicrolearningJudgment" component={MicrolearningJudgment} />
+                <Screen name="MicrolearningPeopleManagement" component={MicrolearningPeopleManagement} />
+                <Screen name="MicrolearningComplexProblemsCollaborator" component={MicrolearningComplexProblemsCollaborator} />
+                <Screen name="MicrolearningFlexibilityCollaborator" component={MicrolearningFlexibilityCollaborator} />
+                <Screen name="MicrolearningEmotionalIntelligenceCollaborator" component={MicrolearningEmotionalIntelligenceCollaborator} />
+                <Screen name="MicrolearningJudgmentCollaborator" component={MicrolearningJudgmentCollaborator} />
                 </Navigator>
         </NavigationContainer>
     )

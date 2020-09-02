@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView, RectButton } from 'react-native-gesture-handler';
 import { View, Text, Image } from 'react-native';
 import PageHeaderBack from '../../components/PageHeaderBack';
 import dashboardIcon from '../../assets/images/icons/dashboard.png';
@@ -18,7 +18,8 @@ function DashboardManager() {
                     <Text style={styles.labelText}> Dashboard </Text>
                     <View style={styles.carouselContainer}>
                         <Carrossel/>
-                    </View>
+                       
+                    </View> 
                 </ScrollView>
                 </View>
             </View>

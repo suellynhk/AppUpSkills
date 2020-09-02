@@ -2,13 +2,12 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     smileysImg:{
-        width: 26,
-        height: 26,
+        width: 25,
+        height:25,
     },
 
     horizontalRadioButton:{
-        padding: 10,
-        width: '100%',
+        alignSelf: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between'
     },

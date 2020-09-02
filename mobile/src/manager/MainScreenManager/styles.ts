@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     },
 
     insideBox:{
+        flex: 1,
         marginTop: -40,
         borderRadius: 20,
         padding: 35,
@@ -17,12 +18,14 @@ const styles = StyleSheet.create({
     },
 
     chooseImg:{
+        alignSelf:'center',
         marginBottom: 30,
         width: 90,
         height: 90
     },
 
     textMainScreen: {
+        alignSelf:'center',
         marginBottom: 20,
         fontSize: 18,
         fontFamily: 'Rubik_500Medium'
@@ -35,6 +38,7 @@ const styles = StyleSheet.create({
     },
 
     buttons: {
+        padding: 20,
         borderRadius: 8,
         marginBottom: 30,
         width: '100%',

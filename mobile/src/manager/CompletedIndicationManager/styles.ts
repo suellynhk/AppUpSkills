@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     },
 
     labelText: {
-        marginTop: 40,
+        marginTop: 30,
         fontSize: 20,
         fontFamily: 'Rubik_700Bold',
         alignSelf: 'center'
@@ -41,9 +41,9 @@ const styles = StyleSheet.create({
 
     button: {
         alignSelf: 'center',
-        marginTop: 30,
         width: 270,
         height: 45,
+        marginTop: 10,
         backgroundColor: '#4949E7',
         justifyContent: 'center',
         alignItems: 'center',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
 
@@ -28,6 +28,7 @@ function PendingEvaluationsCollaborator() {
             <PageHeaderBack />
               
             <View style={styles.insideBox}>
+            <ScrollView>
                <Image source={formImg} style={styles.formImg}/>
                 <Text style={styles.textPendingEvaluation}>
                    Escolha uma das opções:
@@ -52,7 +53,8 @@ function PendingEvaluationsCollaborator() {
                         </Text>
                     </RectButton>
 
-                </View>    
+                </View>  
+                </ScrollView>  
             </View>
         </View>
     );

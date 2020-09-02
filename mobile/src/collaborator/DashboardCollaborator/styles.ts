@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
 
     labelText: {
         alignSelf:'center',
-        marginBottom: 30,
-        marginTop: 40,
+        marginBottom: 20,
+        marginTop: 30,
         fontSize: 18,
         fontFamily: 'Rubik_500Medium',
     },

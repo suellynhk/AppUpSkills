@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
 
@@ -34,6 +34,7 @@ function MainScreenCollaborator
             <PageHeader />
               
             <View style={styles.insideBox}>
+            <ScrollView>
                <Image source={chooseImg} style={styles.chooseImg}/>
                 <Text style={styles.textMainScreen}>
                    Escolha uma das opções:
@@ -58,7 +59,8 @@ function MainScreenCollaborator
                         </Text>
                     </RectButton>
 
-                </View>    
+                </View> 
+            </ScrollView>   
             </View>
         </View>
     );

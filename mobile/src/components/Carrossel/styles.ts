@@ -9,26 +9,42 @@ const styles= StyleSheet.create({
     },
   
     carouselItemContainer:{
-      height: 420,
+      height: 500,
       alignItems: 'center',
       backgroundColor: '#4949E7',
       borderRadius: 8,
-      padding:10
+      padding:15
       
     },
   
     title: {
-      fontSize: 14,
-      fontWeight: 'bold',
+      fontSize: 13,
+      fontFamily: 'Rubik_500Medium',
       color: '#FFF',
     },
   
     carouselImg:{
       marginTop: 15,
-      width: '85%',
-      height: '85%',
+      width: '100%',
+      height: '80%',
       borderRadius: 8
     },
+
+    buttons:{
+      borderRadius: 8,
+      marginTop: 15,
+      width: '100%',
+      height: 45,
+      backgroundColor: '#65B3FF',
+      alignItems: 'center',
+      justifyContent: 'center',
+  },
+
+  textButton:{
+      fontSize: 13,
+      color: '#FFF',
+      fontFamily: 'Rubik_500Medium'
+  },
   
   });
 

@@ -8,7 +8,6 @@ import styles from './styles';
 
 import loginIcon from '../../assets/images/icons/login.png';
 import { useNavigation } from '@react-navigation/native';
-import { registerRootComponent } from 'expo';
 
 interface Usuario {
     cpf: string,

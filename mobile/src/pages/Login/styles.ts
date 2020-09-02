@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
     },
 
     loginIconBox:{
-        marginTop: 50,
         alignItems: 'center'
     },
 
@@ -57,7 +56,7 @@ const styles = StyleSheet.create({
     },
 
     submitButton: {
-        marginTop: 35,
+        marginTop: 20,
         width: 155,
         height: 45,
         backgroundColor:'#4949E7',
