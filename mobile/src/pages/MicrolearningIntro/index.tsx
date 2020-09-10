@@ -35,7 +35,7 @@ function MicrolearningIntro() {
             <View style={styles.insideBox}  >
                 <ScrollView>
                 <Image source={videoIcon} style={styles.videoIcon}/>
-                <Text style={styles.labelText}> Microlearning  </Text> 
+                <Text style={styles.labelText}>Olá!</Text> 
                 <Text style={styles.microlearningText}>
                      {'  '}Preparamos uma breve explicação sobre as Soft Skills 
                      e sobre este aplicativo para você ficar por dentro do assunto!

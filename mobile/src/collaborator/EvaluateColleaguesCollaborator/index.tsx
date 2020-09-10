@@ -35,7 +35,7 @@ function EvaluateColleaguesCollaborator() {
                     </Text>
 
                     <Text style={styles.textEvaluation}>
-                    Agora é sua vez de avaliar os colaboradores que te indicaram para avaliá-los! {'\n'}
+                    Agora é sua vez de avaliar os colaboradores que te indicaram! {'\n'}
                     {'\n'}
                     Deseja realizar a avaliação?
                     </Text>
