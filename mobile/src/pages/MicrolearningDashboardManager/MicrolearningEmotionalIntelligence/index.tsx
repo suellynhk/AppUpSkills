@@ -12,15 +12,6 @@ import PageHeader from '../../../components/PageHeader';
 
 function MicrolearningEmotionalIntelligence() {
 
-    useFocusEffect(() => {
-        setShouldPlay(true);
-        setPositionMillis(0);
-
-        return function cleanup(){
-            setShouldPlay(false);
-            setPositionMillis(0);
-        }
-    })
     const { navigate } = useNavigation();
     const [shouldPlay, setShouldPlay] = useState(true);
     const [positionMillis, setPositionMillis] = useState(0);

@@ -11,24 +11,16 @@ import videoIcon from '../../assets/images/icons/video.png';
 
 function MicrolearningIntro() {
 
-    useFocusEffect(() => {
-        setShouldPlay(true);
-        setPositionMillis(0);
-
-        return function cleanup(){
-            setShouldPlay(false);
-            setPositionMillis(0);
-        }
-    })
-    const { navigate } = useNavigation();
+    const { navigate } = useNavigation(); 
     const [shouldPlay, setShouldPlay] = useState(true);
     const [positionMillis, setPositionMillis] = useState(0);
     function handleNavigateToCreateAccountPage() {  
             setShouldPlay(false);
-            setPositionMillis(0);   
-           navigate('Registration');
+            setPositionMillis(0);
+            navigate('Registration');
     };
 
+    
     return (
         <View style={styles.container}>
             <PageHeader />
@@ -46,7 +38,6 @@ function MicrolearningIntro() {
                 rate={1.0}
                 positionMillis={positionMillis}
                 volume={0.5}
-                isMuted={false}
                 resizeMode={Video.RESIZE_MODE_CONTAIN}
                 shouldPlay= {shouldPlay}
                 isLooping={false}

@@ -12,15 +12,6 @@ import PageHeader from '../../../components/PageHeader';
 
 function MicrolearningComplexProblemsCollaborator() {
 
-    useFocusEffect(() => {
-        setShouldPlay(true);
-        setPositionMillis(0);
-
-        return function cleanup(){
-            setShouldPlay(false);
-            setPositionMillis(0);
-        }
-    })
     const { navigate } = useNavigation();
     const [shouldPlay, setShouldPlay] = useState(true);
     const [positionMillis, setPositionMillis] = useState(0);
@@ -47,7 +38,6 @@ function MicrolearningComplexProblemsCollaborator() {
                 rate={1.0}
                 positionMillis={positionMillis}
                 volume={0.5}
-                isMuted={false}
                 resizeMode={Video.RESIZE_MODE_CONTAIN}
                 shouldPlay= {shouldPlay}
                 isLooping={false}
