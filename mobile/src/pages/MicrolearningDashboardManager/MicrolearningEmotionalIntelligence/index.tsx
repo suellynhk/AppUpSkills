@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Image } from 'react-native';
 import { Video } from 'expo-av';
 
-import { useNavigation, useFocusEffect } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import { ScrollView, RectButton } from 'react-native-gesture-handler';
 import styles from './styles';
  
@@ -30,10 +30,10 @@ function MicrolearningEmotionalIntelligence() {
                 <Image source={videoIcon} style={styles.videoIcon}/>
                 <Text style={styles.labelText}> Inteligência emocional </Text> 
                 <Text style={styles.microlearningText}>
-                     {'  '}Texto...
+                     
                 </Text> 
                 <Video
-                source={require('../../../assets/microlearning-intro.mp4')}
+                source={require('../../../assets/inteligenciaemocional.mp4')}
                 rate={1.0}
                 positionMillis={positionMillis}
                 volume={0.5}

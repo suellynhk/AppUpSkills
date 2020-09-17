@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Image } from 'react-native';
 import { Video } from 'expo-av';
 
-import { useNavigation, useFocusEffect } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import { ScrollView, RectButton } from 'react-native-gesture-handler';
 import styles from './styles';
  
@@ -30,11 +30,11 @@ function MicrolearningFlexibility() {
                         <Image source={videoIcon} style={styles.videoIcon}/>
                         <Text style={styles.labelText}> Flexibilidade </Text> 
                         <Text style={styles.microlearningText}>
-                            {'  '}Texto...
+                            
                         </Text> 
 
                         <Video
-                        source={require('../../../assets/microlearning-intro.mp4')}
+                        source={require('../../../assets/flexibilidade.mp4')}
                         rate={1.0}
                         positionMillis={positionMillis}
                         volume={0.5}

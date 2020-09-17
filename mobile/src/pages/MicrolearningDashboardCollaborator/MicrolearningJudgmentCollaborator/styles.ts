@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
 
     microlearningText:{
         fontFamily: 'Rubik_400Regular',
-        marginTop: 20,
         marginBottom: 20,
         margin: 10,
         fontSize: 15,
