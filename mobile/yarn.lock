@@ -1017,6 +1017,11 @@
   resolved "https://registry.yarnpkg.com/@expo-google-fonts/dosis/-/dosis-0.1.0.tgz#708e89d0380b0085c049517b60acf7fa5cb01439"
   integrity sha512-GwH+8L/KpCjnchoO9PpkuitIo+Kp60VU1Cf8TKh+k2vJyHrj9cmQCk2tFWdHIzMJAUmmRi0MBUMeDdSeXkGxRg==
 
+"@expo-google-fonts/roboto@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/roboto/-/roboto-0.1.0.tgz#2897dc09db4ceb9f5ba337103090e1d70236e811"
+  integrity sha512-q+68xWZpLIS/iPC5jwoakEskyTVgIC1jfpNzWFMnUnBoZsWRq1rlpnleR3MjKDeN1Vt0NcvUI/aaZoCyIXhisw==
+
 "@expo-google-fonts/rubik@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@expo-google-fonts/rubik/-/rubik-0.1.0.tgz#0a0f2352f342183daea7b72c7d4f9e452962a5db"
